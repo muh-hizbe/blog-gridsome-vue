@@ -1,0 +1,21 @@
+.page{
+    margin: 0 auto;
+    text-align: center;
+}
+.page a{
+    padding: 5px 13px;
+    margin: 0 2px;
+    color: var(--title-color);
+    text-decoration: none;
+    border-radius: 10px;    
+    background-color: var(--bg-color);
+    box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
+    transition: transform .3s, background-color .3s, box-shadow .6s;
+
+    &:hover{
+        border-left: 3px solid var(--link-color);
+    }
+}
+.page a.active{
+    border-left: 3px solid var(--link-color);
+}
