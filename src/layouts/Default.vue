@@ -21,7 +21,7 @@
         </footer>
 
         <div class="toggle__left">
-            <ToggleUp @click="toTop" />
+            <ToggleUp />
         </div>
 
         <div class="toggle__right">        
@@ -68,10 +68,8 @@ export default {
     z-index: 10;
 
     @media screen and (min-width: 1300px) {
-        //Make header sticky for large screens
         min-height: var(--header-height);
         padding: 0 calc(var(--space) / 2);
-        position: sticky;
         width: 100%;
     }
 }    

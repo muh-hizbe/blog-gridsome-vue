@@ -17,8 +17,12 @@ query {
 <style lang="scss">
 .logo {
 	text-decoration: none;
-  color: var(--body-color)!important;
-  font-size: .9em;
+    color: var(--body-color)!important;
+    font-size: .9em;
+    padding: 10px;
+    border-radius: var(--radius);
+    background-color: var(--bg-color);
+    box-shadow: var(--box-shadow);
 
 	&__image {
 		vertical-align: middle;
