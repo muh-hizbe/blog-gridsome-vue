@@ -16,7 +16,6 @@
   },
   "devDependencies": {
     "gridsome-plugin-manifest": "^0.3.5",
-    "gridsome-plugin-service-worker": "^0.1.5",
     "node-sass": "^4.12.0",
     "sass-loader": "^8.0.0"
   }

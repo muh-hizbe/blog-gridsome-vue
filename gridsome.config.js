@@ -33,16 +33,6 @@ module.exports = {
       }
     },
     {
-      use: "gridsome-plugin-service-worker",
-      options: {
-        precachedRoutes: ["/",/\.(js|css|png|md)$/],
-        staleWhileRevalidate: {
-          cacheName: "co-v1",
-          routes: ["/"],
-        },
-      },
-    },
-    {
       use: "gridsome-plugin-manifest",
       options: {
         background_color: "#ffffff",
