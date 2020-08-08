@@ -43,7 +43,6 @@ module.exports = {
                 theme_color: '#213f9a',
                 background_color: '#ffffff',
                 gcm_sender_id: undefined,
-                icon_path: "./src/assets/images/icons/icon-152x152.png",
                 start_url: '/',
                 categories: ['education'],
                 lang: 'id-ID',
@@ -60,6 +59,7 @@ module.exports = {
             icon: 'src/favicon.png',
             msTileColor: '#213f9a',
             workboxOptions: {
+                swSrc: './src/service-worker.js',
                 cacheId: 'awesome-pwa',
                 globPatterns: ['assets/@(js|css|png|jpg)/*', 'index.html'],
                 skipWaiting: true
