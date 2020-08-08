@@ -59,7 +59,7 @@ module.exports = {
             icon: 'src/favicon.png',
             msTileColor: '#213f9a',
             workboxOptions: {
-                swSrc: './src/service-worker.js',
+                swSrc: './src/registerServiceWorker.js',
                 cacheId: 'awesome-pwa',
                 globPatterns: ['assets/@(js|css|png|jpg)/*', 'index.html'],
                 skipWaiting: true
