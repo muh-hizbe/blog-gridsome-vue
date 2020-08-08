@@ -1,12 +1,12 @@
 <template>
   <div id="app">
 
-        <div class="header__left">
+        <!-- <div class="header__left">
             <Logo v-if="showLogo" /> 
-        </div>
+        </div> -->
 
         <header class="header" id="header">
-
+            <Navbar />
         </header>
 
         <transition name="fade" appear>
@@ -16,8 +16,8 @@
         </transition>    
 
         <footer class="footer">
-        <span class="footer__copyright">Copyright © {{ new Date().getFullYear() }}. </span>
-        <span class="footer__links">Powered by <a href="//gridsome.org"> Gridsome </a></span>
+        <span class="footer__copyright">&copy; {{ new Date().getFullYear() }} </span>
+        <span class="footer__links">Built with 💜 and 🎨</span>
         </footer>
 
         <div class="toggle__left">
@@ -33,18 +33,20 @@
 
 <script>
 import Logo from '~/components/Logo.vue'
+import Navbar from '~/components/Navbar.vue'
 import ToggleTheme from '~/components/ToggleTheme.vue'
 import ToggleUp from '~/components/ToggleUp.vue'
 
 export default {
-  props: {
-    showLogo: { default: true }
-  },
-  components: {
-    Logo,
-    ToggleTheme,
-    ToggleUp,
-  }
+    props: {
+        showLogo: { default: true }
+    },
+    components: {
+        Logo,
+        Navbar,
+        ToggleTheme,
+        ToggleUp,
+    }
 }
 </script>
 
@@ -55,6 +57,13 @@ export default {
 
 .fade-enter {
   opacity: 0;
+}
+
+.header{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 11;
 }
 
 .header__left{
@@ -76,7 +85,7 @@ export default {
 
 .toggle__left {
     position: fixed;
-    left: 5px;
+    left: 15px;
     bottom:10px;
     z-index: 10;
 }

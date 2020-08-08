@@ -5,3 +5,34 @@
 .space-bottom {
 	margin-bottom: var(--space);
 }
+
+
+.grid-container {
+    display: flex;
+    padding: 10px 20% 10px 20%;
+    margin: 0;
+}
+
+// Make  things smaller for mobile
+@media screen and (max-width: 650px) {
+    .grid-container {
+        display: flex;
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+}
+
+.justify-between{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.m-center{
+    margin: 0 auto;
+}
+
+.bg-none{
+    background: none;
+}

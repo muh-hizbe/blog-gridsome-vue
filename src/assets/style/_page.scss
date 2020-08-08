@@ -10,10 +10,11 @@
     border-radius: 10px;    
     background-color: var(--bg-color);
     box-shadow: 1px 1px 5px 0 rgba(0,0,0,.02), 1px 1px 15px 0 rgba(0,0,0,.03);
-    transition: transform .3s, background-color .3s, box-shadow .6s;
+    transition: transform 3s, background-color .3s, box-shadow .6s;
+    transition: border-left .15s;
 
     &:hover{
-        border-left: 3px solid var(--link-color);
+        border-left: 3px solid var(--link-color);        
     }
 }
 .page a.active{

@@ -32,7 +32,8 @@ export default {
 .post-card {
   margin-bottom: var(--space);
   position: relative;
-  // box-shadow: 0px 2px 5px 0px rgba(0, 52, 102, 0.11)!important;
+//   box-shadow: 0px 2px 5px 0px rgba(0, 52, 102, 0.11)!important;
+    box-shadow: var(--box-shadow);
 
   &__header {
     margin-left: calc(var(--space) * -1);

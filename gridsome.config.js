@@ -5,11 +5,11 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'hizbe blog',
-  siteUrl: 'https://www.hizbe.com',
-  siteDescription: 'this is about my life',
+  siteName: ' Hizbe\'s Blog ;',
+  siteUrl: 'localhost/blog',
+  siteDescription: 'it\'s about my life | my personal blog ',
   titleTemplate: '%s | @hizbe',
-  icon: './favicon.png',
+  icon: 'src/favicon.png',
 
   templates: {
     Post: '/:title',
@@ -31,6 +31,28 @@ module.exports = {
           }
         }
       }
+    },
+    {
+      use: "gridsome-plugin-service-worker",
+      options: {
+        precachedRoutes: ["/",/\.(js|css|png|md)$/],
+        staleWhileRevalidate: {
+          cacheName: "co-v1",
+          routes: ["/"],
+        },
+      },
+    },
+    {
+      use: "gridsome-plugin-manifest",
+      options: {
+        background_color: "#ffffff",
+        icon_path: "./src/assets/images/icons/icon-152x152.png",
+        name: "@hizbe",
+        short_name: "Blog's @hizbe",
+        theme_color: "#213f9a",
+        lang: "id",
+        display: "standalone"
+      },
     },
   ],
 

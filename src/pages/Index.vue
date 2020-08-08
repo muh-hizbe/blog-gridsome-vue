@@ -17,7 +17,7 @@
 
 <page-query>
 query($page: Int) {
-  posts: allPost(perPage: 2, page: $page, filter: { published: { eq: true }}) @paginate {
+  posts: allPost(perPage: 2, page: $page, filter: { published: { eq: true }}, sortBy: "date") @paginate {
     pageInfo {
       totalPages
       currentPage            
@@ -26,7 +26,7 @@ query($page: Int) {
       node {
         id
         title
-        date (format: "D. MMMM YYYY")
+        date (format: "D MMMM YYYY")
         timeToRead
         description
         cover_image (width: 770, height: 380, blur: 10)
@@ -54,7 +54,11 @@ export default {
     Pager
   },
   metaInfo: {
-    title: 'Home'
+    title: 'Home',
+    meta: [
+      { name: 'author', content: 'Muhammad Hizbullah' },
+      { name: 'description', content: 'Home page of personal blog by @hizbe' },
+    ]
   }
 }
 </script>
