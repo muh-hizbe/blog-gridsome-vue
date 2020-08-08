@@ -6,7 +6,7 @@
 
 module.exports = {
   siteName: ' Hizbe\'s Blog ;',
-  siteUrl: 'hizbe-blog.netlify.app',
+  siteUrl: 'https://hizbe-blog.netlify.app',
   siteDescription: 'it\'s about my life | my personal blog ',
   titleTemplate: '%s | @hizbe',
   icon: 'src/favicon.png',
