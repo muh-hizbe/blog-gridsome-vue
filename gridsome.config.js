@@ -18,43 +18,65 @@ module.exports = {
 
   plugins: [
     {
-      // Create posts from markdown files
-      use: '@gridsome/source-filesystem',
-      options: {
-        typeName: 'Post',
-        path: 'content/posts/*.md',
-        refs: {
-          // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
-          tags: {
-            typeName: 'Tag',
-            create: true
-          }
+        // Create posts from markdown files
+        use: '@gridsome/source-filesystem',
+        options: {
+            typeName: 'Post',
+            path: 'content/posts/*.md',
+            refs: {
+                // Creates a GraphQL collection from 'tags' in front-matter and adds a reference.
+                tags: {
+                    typeName: 'Tag',
+                    create: true
+                }
+            }
         }
-      }
     },
     {
-      use: "gridsome-plugin-manifest",
-      options: {
-        background_color: "#ffffff",
-        icon_path: "./src/assets/images/icons/icon-152x152.png",
-        name: "@hizbe",
-        short_name: "Blog's @hizbe",
-        theme_color: "#213f9a",
-        lang: "id",
-        display: "standalone"
-      },
-    },
+        use: '@allanchain/gridsome-plugin-pwa',
+        options: {
+            manifestOptions: {
+                name: "@hizbe",
+                short_name: 'Blog\'s @hizbe',
+                description: 'This\'s about my story!',
+                display: 'standalone',
+                theme_color: '#213f9a',
+                background_color: '#ffffff',
+                gcm_sender_id: undefined,
+                icon_path: "./src/assets/images/icons/icon-152x152.png",
+                start_url: '/',
+                categories: ['education'],
+                lang: 'id-ID',
+                dir: 'auto',
+                androidChrome: {
+                    src: './src/my-icon.png', // your favicon, usually `./src/favicon.png`
+                    name: 'android-chrome',
+                    sizes: [512, 384, 192, 144, 96, 72, 48],
+                    maskable: true,
+                },
+            },
+            appleMobileWebAppStatusBarStyle: 'default',
+            manifestPath: 'manifest.json',
+            icon: 'src/favicon.png',
+            msTileColor: '#213f9a',
+            workboxOptions: {
+                cacheId: 'awesome-pwa',
+                globPatterns: ['assets/@(js|css|png|jpg)/*', 'index.html'],
+                skipWaiting: true
+            }
+        }
+    }
   ],
 
   transformers: {
-    //Add markdown support to all file-system sources
-    remark: {
-      externalLinksTarget: '_blank',
-      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
-      anchorClassName: 'icon icon-link',
-      plugins: [
-        '@gridsome/remark-prismjs'
-      ]
+        //Add markdown support to all file-system sources
+        remark: {
+            externalLinksTarget: '_blank',
+            externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+            anchorClassName: 'icon icon-link',
+            plugins: [
+                '@gridsome/remark-prismjs'
+            ]
+        }
     }
-  }
 }

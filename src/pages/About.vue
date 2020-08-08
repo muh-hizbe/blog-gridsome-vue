@@ -4,7 +4,7 @@
             <h1 class="m-center text-center">About</h1>
         </div>
         <div class="grid-container">
-            <pre class="about">
+            <pre class="about" wrap>
     Hai, aku Muhammad Hizbullah.
 
     Aku hanyalah manusia 🧑‍ yang ingin membuat sebuah karya yang keren dan menyenangkan hari serta hati ❤️ orang-orang,
