@@ -59,7 +59,7 @@ module.exports = {
             icon: 'src/favicon.png',
             msTileColor: '#213f9a',
             workboxOptions: {
-                cacheId: 'awesome-pwa',
+                cacheId: 'hizbe-blog-pwa',
                 skipWaiting: true
             }
         }
