@@ -59,8 +59,29 @@ module.exports = {
             icon: 'src/favicon.png',
             msTileColor: '#213f9a',
             workboxOptions: {
-                cacheId: 'hizbe-blog-pwa',
-                skipWaiting: true
+                skipWaiting: true,
+                runtimeCaching: [
+                    {
+                        urlPattern: new RegExp('https://cdnjs.cloudflare.com/.*'),
+                        handler: 'StaleWhileRevalidate',
+                        options: { // Images don't support CORS
+                            cacheName: 'Font-Awesome-css',
+                            cacheableResponse: {
+                                statuses: [0, 200]
+                            }
+                        }
+                    },
+                    {
+                        urlPattern: new RegExp('/(index.html)?$'),
+                        handler: 'StaleWhileRevalidate',
+                        options: {
+                            cacheName: 'page',
+                            cacheableResponse: {
+                                statuses: [200]
+                            }
+                        }
+                    },
+                ]
             }
         }
     }
