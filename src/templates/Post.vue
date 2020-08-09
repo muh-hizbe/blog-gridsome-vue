@@ -31,7 +31,7 @@
             var HYVOR_TALK_WEBSITE = 1433; // DO NOT CHANGE THIS
             var HYVOR_TALK_CONFIG = {
                 url: 'https://hizbe-blog.netlify.app',
-                id: $page.post.path,
+                id: 
                 loadMode: 'scroll'
             };
         </script>
@@ -70,6 +70,7 @@ export default {
 <page-query>
 query Post ($id: ID!) {
   post: post (id: $id) {
+    id
     title
     path
     date (format: "D MMMM YYYY")
