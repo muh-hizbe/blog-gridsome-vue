@@ -72,6 +72,16 @@ module.exports = {
                         }
                     },
                     {
+                        urlPattern: new RegExp('https://fonts.googleapis.com/.*'),
+                        handler: 'StaleWhileRevalidate',
+                        options: { // Images don't support CORS
+                            cacheName: 'Google-Font',
+                            cacheableResponse: {
+                                statuses: [0, 200]
+                            }
+                        }
+                    },
+                    {
                         urlPattern: new RegExp('/(index.html)?$'),
                         handler: 'StaleWhileRevalidate',
                         options: {
