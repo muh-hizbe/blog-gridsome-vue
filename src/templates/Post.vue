@@ -25,10 +25,20 @@
 
     <div class="post-comments">
       <!-- Add comment widgets here -->
+      <div id="hyvor-talk-view"></div>        
     </div>
     
   </Layout>
 </template>
+
+<script type="text/javascript">
+    var HYVOR_TALK_WEBSITE = 1433; // DO NOT CHANGE THIS
+    var HYVOR_TALK_CONFIG = {
+        url: false,
+        id: false
+    };
+</script>
+<script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
 
 <script>
 import PostMeta from '~/components/PostMeta'
