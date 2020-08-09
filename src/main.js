@@ -26,6 +26,11 @@ export default function (Vue, { router, head, isClient }) {
         crossorigin: 'anonymous'
     })
 
+    head.link.push({
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css'
+    })
+
     head.meta.push({
         name: 'keywords',
         content: 'Hizbe,Blog,Hizbullah,Hizbu,JavaScript'
