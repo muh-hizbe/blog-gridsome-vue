@@ -5,11 +5,11 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
-module.exports = function (api) {
-  api.loadSource(({ addCollection }) => {
+module.exports = function(api) {
+  api.loadSource(store => {
     // Use the Data store API here: https://gridsome.org/docs/data-store-api/
     if (process.env.NODE_ENV === 'production') {
-        const posts = getContentType('Post')
+        const posts = store.getContentType('Post')
 
         posts.data().forEach(node => {
             if (node.published !== true) {
