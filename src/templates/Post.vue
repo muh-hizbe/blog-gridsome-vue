@@ -70,7 +70,6 @@ export default {
 <page-query>
 query Post ($id: ID!) {
   post: post (id: $id) {
-    id
     title
     path
     date (format: "D MMMM YYYY")
