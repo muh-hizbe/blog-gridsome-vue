@@ -2,6 +2,7 @@
 title: Kenapa ada blog ini?
 date: 2020-08-09
 published: true
+cover_image: null
 tags: ['Story','My life']
 canonical_url: false
 description: "Hai sob ✋, apa kabar kalian? kenapa blog ini ada?."
