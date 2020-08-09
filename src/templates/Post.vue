@@ -25,18 +25,6 @@
 
     <div class="post-comments">
         <!-- Add comment widgets here -->
-        <span data-talk-id="PAGE_IDENTIFIER"></span>
-        <div id="hyvor-talk-view"></div>  
-        <script type="text/javascript">
-            var HYVOR_TALK_WEBSITE = 1433; // DO NOT CHANGE THIS
-            var HYVOR_TALK_CONFIG = {
-                url: false,
-                id: false,
-                loadMode: 'scroll'
-            };
-        </script>
-        <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>     
-        <script async type="text/javascript" src="//talk.hyvor.com/web-api/count/"> 
     </div>
     
   </Layout>
