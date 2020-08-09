@@ -50,6 +50,8 @@ export default {
 
   &__image {
     min-width: 100%;
+    max-height: 500px;
+    object-fit: cover;
   }
 
   &__title {
