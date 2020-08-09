@@ -18,7 +18,7 @@
 query Tag ($id: ID!, $page: Int) {
   tag (id: $id) {
     title
-    belongsTo (perPage: 2, page: $page, sortBy: "date") @paginate {
+    belongsTo (perPage: 5, page: $page, sortBy: "date") @paginate {
         totalCount
         pageInfo {
             totalPages
