@@ -4,6 +4,15 @@
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const plugins = []
+if (process.env.WEBPACK_STATS) {
+  const { StatsWriterPlugin } = require('webpack-stats-plugin')
+  plugins.push(new StatsWriterPlugin({
+    fields: null,
+    stats: { chunkModules: true }
+  }))
+}
+
 module.exports = {
   siteName: ' Hizbe\'s Blog ;',
   siteUrl: 'https://hizbe-blog.netlify.app',
@@ -57,27 +66,38 @@ module.exports = {
             appleMobileWebAppStatusBarStyle: 'default',
             manifestPath: 'manifest.json',
             icon: 'src/my-icon.png',
+            appleMaskIcon: 'src/maskable_icon.png',
             msTileColor: '#213f9a',
             workboxOptions: {
                 skipWaiting: true,
                 runtimeCaching: [
                     {
                         urlPattern: new RegExp('https://cdnjs.cloudflare.com/.*'),
-                        handler: 'StaleWhileRevalidate',
+                        handler: 'CacheFirst',
                         options: { // Images don't support CORS
                             cacheName: 'Font-Awesome-css',
                             cacheableResponse: {
-                                statuses: [0, 200]
+                                statuses: [200]
                             }
                         }
                     },
                     {
-                        urlPattern: new RegExp('https://fonts.googleapis.com/.*'),
-                        handler: 'StaleWhileRevalidate',
+                        urlPattern: new RegExp('https://(cdn.jsdelivr.net|fonts.(gstatic|googleapis).com)/.*'),
+                        handler: 'CacheFirst',
                         options: { // Images don't support CORS
                             cacheName: 'Google-Font',
                             cacheableResponse: {
-                                statuses: [0, 200]
+                                statuses: [200]
+                            }
+                        }
+                    },
+                    {
+                        urlPattern: new RegExp('/(index.json)?$'),
+                        handler: 'StaleWhileRevalidate',
+                        options: {
+                            cacheName: 'Post-Data',
+                            cacheableResponse: {
+                                statuses: [200]
                             }
                         }
                     },
