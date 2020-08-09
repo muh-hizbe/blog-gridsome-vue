@@ -81,6 +81,16 @@ module.exports = {
                             }
                         }
                     },
+                    {
+                        urlPattern: new RegExp('/*'),
+                        handler: 'StaleWhileRevalidate',
+                        options: {
+                            cacheName: 'pages',
+                            cacheableResponse: {
+                                statuses: [200]
+                            }
+                        }
+                    },
                 ]
             }
         }
