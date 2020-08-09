@@ -31,7 +31,7 @@
             var HYVOR_TALK_WEBSITE = 1433; // DO NOT CHANGE THIS
             var HYVOR_TALK_CONFIG = {
                 url: 'https://hizbe-blog.netlify.app',
-                id: this.$page.post.id,
+                id: false,
                 loadMode: 'scroll'
             };
         </script>
