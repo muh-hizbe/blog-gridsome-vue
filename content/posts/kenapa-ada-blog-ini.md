@@ -2,7 +2,7 @@
 title: Kenapa ada blog ini?
 date: 2020-08-09
 published: true
-cover_image: null
+cover_image: https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
 tags: ['Story','My life']
 canonical_url: false
 description: "Hai sob ✋, apa kabar kalian? kenapa blog ini ada?."
