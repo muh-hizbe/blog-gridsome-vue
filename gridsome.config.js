@@ -56,11 +56,7 @@ module.exports = {
             },
             appleMobileWebAppStatusBarStyle: 'default',
             manifestPath: 'manifest.json',
-            icon: {
-                appleMaskIcon: {
-                    url: './src/maskable_icon.png'
-                }
-            },
+            icon: 'src/my-icon.png',
             msTileColor: '#213f9a',
             workboxOptions: {
                 skipWaiting: true,
