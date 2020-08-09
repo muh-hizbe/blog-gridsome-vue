@@ -6,8 +6,12 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function(api) {
+//   api.loadSource(({addCollection}) => {
+//     // Use the Data store API here: https://gridsome.org/docs/data-store-api/
+//   })
+
+  // uncomment code below when you'll push to repository
   api.loadSource(store => {
-    // Use the Data store API here: https://gridsome.org/docs/data-store-api/
     if (process.env.NODE_ENV === 'production') {
         const posts = store.getContentType('Post')
 
