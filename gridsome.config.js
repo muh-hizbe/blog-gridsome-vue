@@ -50,13 +50,17 @@ module.exports = {
                 androidChrome: {
                     src: './src/my-icon.png', // your favicon, usually `./src/favicon.png`
                     name: 'android-chrome',
-                    sizes: [512, 384, 192, 144, 96, 72, 48],
+                    sizes: [512, 384, 196, 192, 144, 96, 72, 48],
                     maskable: true,
                 },
             },
             appleMobileWebAppStatusBarStyle: 'default',
             manifestPath: 'manifest.json',
-            icon: 'src/favicon.png',
+            icon: {
+                appleMaskIcon: {
+                    url: './src/maskable_icon.png'
+                }
+            },
             msTileColor: '#213f9a',
             workboxOptions: {
                 skipWaiting: true,
