@@ -4,7 +4,7 @@ date: 2020-08-09
 published: true
 tags: ['Story','My life']
 cover_image: https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
-canonical_url: false
+canonical_url: https://hizbe-blog.netlify.app
 description: "Hai sob ✋, apa kabar kalian? kenapa blog ini ada?."
 ---
 
