@@ -29,7 +29,7 @@ query($page: Int) {
         date (format: "D MMMM YYYY")
         timeToRead
         description
-        cover_image
+        cover_image (width: 720, height: 200, quality: 90, blur: 30, alt: "cover image")
         path
         tags {
           id
