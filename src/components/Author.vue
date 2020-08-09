@@ -68,7 +68,7 @@ export default {
 
 .author h1{
     font-size: 50px;
-    font-family: 'Courier','Brush Script MT','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    font-family: 'Pacifico','Courier','Brush Script MT','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
     
     a{
         text-decoration: none !important;
