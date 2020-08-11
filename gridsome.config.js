@@ -45,8 +45,8 @@ module.exports = {
         use: '@allanchain/gridsome-plugin-pwa',
         options: {
             manifestOptions: {
-                name: "@hizbe",
-                short_name: 'Blog\'s @hizbe',
+                name: "Muhammad Hizbullah",
+                short_name: '@hizbe',
                 description: 'This\'s about my story!',
                 display: 'standalone',
                 theme_color: '#213f9a',
@@ -65,7 +65,7 @@ module.exports = {
             },
             appleMobileWebAppStatusBarStyle: 'default',
             manifestPath: 'manifest.json',
-            icon: 'src/my-icon.png',
+            icon: 'src/maskable_icon.png',
             appleMaskIcon: 'src/maskable_icon.png',
             msTileColor: '#213f9a',
             workboxOptions: {
