@@ -42,6 +42,11 @@ export default function (Vue, { router, head, isClient }) {
     })
 
     head.meta.push({
+        name: 'theme-color',
+        content: '#213f9a'
+    })
+
+    head.meta.push({
         name: 'keywords',
         content: 'Hizbe,Blog,Hizbullah,Hizbu,JavaScript'
     })
