@@ -59,7 +59,7 @@ module.exports = {
                 androidChrome: {
                     src: './src/my-icon.png', // your favicon, usually `./src/favicon.png`
                     name: 'android-chrome',
-                    sizes: [512, 384, 196, 192, 144, 96, 72, 48],
+                    sizes: [512, 384, 196, 192, 180],
                     maskable: true,
                 },
             },
