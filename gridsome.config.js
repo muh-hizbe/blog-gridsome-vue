@@ -60,8 +60,9 @@ module.exports = {
                     src: './src/my-icon.png', // your favicon, usually `./src/favicon.png`
                     name: 'android-chrome',
                     sizes: [512, 384, 196, 192, 180],
-                    maskable: true,
+                    maskable: true,                    
                 },
+                maskableIcon: true
             },
             appleMobileWebAppStatusBarStyle: 'default',
             manifestPath: 'manifest.json',
