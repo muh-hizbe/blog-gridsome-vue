@@ -58,6 +58,7 @@ export default {
     meta: [
       { name: 'author', content: 'Muhammad Hizbullah' },
       { name: 'description', content: 'Home page of personal blog by @hizbe' },
+      { name: 'theme-color', content: '#213f9a' }
     ]
   }
 }

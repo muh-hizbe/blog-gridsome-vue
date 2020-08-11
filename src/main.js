@@ -9,6 +9,11 @@ export default function (Vue, { router, head, isClient }) {
       require('./registerServiceWorker')
     }
 
+    head.meta.push({
+        name: 'theme-color',
+        content: '#213f9a'
+    })
+    
     head.link.push({
         rel: 'manifest',
         href: '../manifest.json'
@@ -39,12 +44,7 @@ export default function (Vue, { router, head, isClient }) {
     head.link.push({
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css?family=Gamja+Flowe|Pacifico'
-    })
-
-    head.meta.push({
-        name: 'theme-color',
-        content: '#213f9a'
-    })
+    })    
 
     head.meta.push({
         name: 'keywords',

@@ -61,9 +61,9 @@ module.exports = {
                     name: 'android-chrome',
                     sizes: [512, 384, 196, 192, 180],
                     maskable: true,                    
-                },
-                maskableIcon: true
+                },                
             },
+            maskableIcon: true,
             appleMobileWebAppStatusBarStyle: 'default',
             manifestPath: 'manifest.json',
             icon: 'src/maskable_icon.png',
