@@ -35,7 +35,12 @@ export default function (Vue, { router, head, isClient }) {
 
     head.link.push({
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Gamja+Flowe|Pacifico'
+        href: 'https://fonts.googleapis.com/css?family=Gamja+Flower|Pacifico'
+    })    
+
+    head.link.push({
+        rel: 'stylesheet',
+        href: 'https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css'
     })    
 
     head.meta.push({
