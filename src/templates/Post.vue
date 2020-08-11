@@ -31,6 +31,8 @@
 </template>
 
 <script>
+import 'gitalk/dist/gitalk.css'
+import Gitalk from 'gitalk'
 import PostMeta from '~/components/PostMeta'
 import PostTags from '~/components/PostTags'
 import Author from '~/components/Author.vue'
@@ -40,6 +42,20 @@ export default {
     Author,
     PostMeta,
     PostTags
+  },
+  mounted () {
+    const gitalk = new Gitalk({
+        clientID: 'f36037cf9aa66e03843e',
+        clientSecret: '029a33b30192b081d19702aae1bd17c9b1b453ee',
+        repo: 'blog-gridsome-vue',      // The repository of store comments,
+        owner: 'muh-hizbe',
+        admin: ['muh-hizbe'],
+        id: this.$page.post.path,
+        title: `Comments on '${this.$page.post.title}'`,     // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    })
+
+    gitalk.render('gitalk-container')
   },
   metaInfo () {
     return {
@@ -55,21 +71,8 @@ export default {
 }
 </script>
 
-<script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-
 <script>
-    const gitalk = new Gitalk({
-    clientID: 'f36037cf9aa66e03843e',
-    clientSecret: '029a33b30192b081d19702aae1bd17c9b1b453ee',
-    repo: 'blog-gridsome-vue',      // The repository of store comments,
-    owner: 'muh-hizbe',
-    admin: ['muh-hizbe'],
-    id: this.$page.post.path,
-    title: `Comments on '${this.$page.post.title}'`,     // Ensure uniqueness and length less than 50
-    distractionFreeMode: false  // Facebook-like distraction free mode
-    })
-
-    gitalk.render('gitalk-container')
+    
 </script>
 
 <page-query>
