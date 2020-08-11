@@ -24,7 +24,7 @@
     </div>
 
     <div class="post-comments">
-        <Gitalk />
+        <Gitalk :config={id:$page.post.path} />
     </div>
     
   </Layout>
