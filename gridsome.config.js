@@ -128,15 +128,15 @@ module.exports = {
         }
     },
     {
-    use:  'gridsome-plugin-gitalk',
-    options: {
-      clientID:  'f36037cf9aa66e03843e',
-      clientSecret: '029a33b30192b081d19702aae1bd17c9b1b453ee',
-      repo: 'blog-gridsome-vue',
-      owner: 'muh-hizbe',
-      admin: ['muh-hizbe']
+        use:  'gridsome-plugin-gitalk',
+        options: {
+            clientID:  'f36037cf9aa66e03843e',
+            clientSecret: '029a33b30192b081d19702aae1bd17c9b1b453ee',
+            repo: 'blog-gridsome-vue',
+            owner: 'muh-hizbe',
+            admin: ['muh-hizbe']
+        }
     }
-  }
   ],
 
   transformers: {
