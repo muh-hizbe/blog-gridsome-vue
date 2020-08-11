@@ -9,11 +9,13 @@ export default function (Vue, { router, head, isClient }) {
       require('./registerServiceWorker')
     }
 
+    head.htmlAttrs = { lang: 'id' }
+
     head.meta.push({
         name: 'theme-color',
         content: '#213f9a'
     })
-    
+
     head.link.push({
         rel: 'manifest',
         href: '../manifest.json'
