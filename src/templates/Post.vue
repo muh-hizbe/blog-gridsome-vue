@@ -132,6 +132,9 @@ query Post ($id: ID!) {
 .post-comments {
     max-width: var(--content-width);
     padding: calc(var(--space) / 2);
+    margin: 0 auto;
+    transition: background-color .6s;
+    transition: transform .3s, background-color .3s, box-shadow .6s;
 
     &:empty {
         display: none;
