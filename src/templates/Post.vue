@@ -130,14 +130,15 @@ query Post ($id: ID!) {
 }
 
 .post-comments {
-  padding: calc(var(--space) / 2);
+    max-width: var(--content-width);
+    padding: calc(var(--space) / 2);
 
-  &:empty {
-    display: none;
-  }
+    &:empty {
+        display: none;
+    }
 }
 
 .post-author {
-  margin-top: calc(var(--space) / 2);
+    margin-top: calc(var(--space) / 2);
 }
 </style>
