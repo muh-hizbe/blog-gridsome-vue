@@ -1,10 +1,8 @@
 <template>
 	<div class="author">
 
-		<!-- <g-image alt="Author image" class="author__image" src="~/assets/images/author.jpg" width="180" height="180" blur="5" /> -->
-
 		<h1 v-if="showTitle" class="author__site-title">
-			<g-link to="/about"> {{ $static.metadata.siteName }} </g-link>
+			<g-link to="/about" rel="noopener noreferrer"> {{ $static.metadata.siteName }} </g-link>
 		</h1>
 
 		<p class="author__intro">
@@ -12,10 +10,10 @@
 		</p>
 
 		<p class="author__links">
-			<g-link to="//linkedin.com/in/muhammad-hizbullah-736109168/"><i class="fa fa-linkedin" aria-hidden="true"></i></g-link>
-            <g-link to="//github.com/muh-hizbe"><i class="fa fa-github" aria-hidden="true"></i></g-link>
-            <g-link to="//twitter.com/muh__hizbullah"><i class="fa fa-twitter" aria-hidden="true"></i></g-link>
-            <g-link to="mailto:muh.saferagic@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></g-link>
+			<g-link to="//linkedin.com/in/muhammad-hizbullah-736109168/" rel="noopener noreferrer"><i class="fa fa-linkedin" aria-hidden="true"></i></g-link>
+            <g-link to="//github.com/muh-hizbe" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></g-link>
+            <g-link to="//twitter.com/muh__hizbullah" rel="noopener noreferrer"><i class="fa fa-twitter" aria-hidden="true"></i></g-link>
+            <g-link to="mailto:muh.saferagic@gmail.com" rel="noopener noreferrer"><i class="fa fa-envelope" aria-hidden="true"></i></g-link>
 		</p>
 
 	</div>
