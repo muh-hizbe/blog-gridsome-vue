@@ -50,12 +50,12 @@ export default {
         repo: 'blog-gridsome-vue',      // The repository of store comments,
         owner: 'muh-hizbe',
         admin: ['muh-hizbe'],
-        id: this.$page.post.path,
-        title: `Comments on '${this.$page.post.title}'`,     // Ensure uniqueness and length less than 50
+        id: this.$page.post.path,     // Ensure uniqueness and length less than 50
         distractionFreeMode: false  // Facebook-like distraction free mode
     })
 
-    gitalk.render('gitalk-container')
+    console.log(this.$page.post.path);
+    gitalk.render('gitalk-container');
   },
   metaInfo () {
     return {
