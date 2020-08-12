@@ -13,9 +13,7 @@
     "@gridsome/remark-prismjs": "^0.3.0",
     "@gridsome/source-filesystem": "^0.6.0",
     "@gridsome/transformer-remark": "^0.3.0",
-    "gitalk": "^1.6.2",
     "gridsome": "^0.7.0",
-    "gridsome-plugin-gitalk": "^0.1.0",
     "register-service-worker": "^1.7.1"
   },
   "devDependencies": {
