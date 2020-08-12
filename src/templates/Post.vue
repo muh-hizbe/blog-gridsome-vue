@@ -31,14 +31,11 @@
 </template>
 
 <script>
-</script>
-
-
-<script>
+import 'vue-gitalk/dist/vue-gitalk.css';
 import Gitalk from 'vue-gitalk';
-import PostMeta from '~/components/PostMeta';
-import PostTags from '~/components/PostTags';
-import Author from '~/components/Author.vue';
+import PostMeta from '~/components/PostMeta'
+import PostTags from '~/components/PostTags'
+import Author from '~/components/Author.vue'
 
 export default {
   components: {
@@ -59,6 +56,10 @@ export default {
     }
   }
 }
+</script>
+
+<script>
+    
 </script>
 
 <page-query>
