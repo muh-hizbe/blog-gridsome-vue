@@ -33,8 +33,6 @@
 <script>
 import 'vue-gitalk/dist/vue-gitalk.css'
 import Gitalk from 'vue-gitalk'
-// import 'gitalk/dist/gitalk.css'
-// import Gitalk from 'gitalk'
 import PostMeta from '~/components/PostMeta'
 import PostTags from '~/components/PostTags'
 import Author from '~/components/Author.vue'
