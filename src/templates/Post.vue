@@ -44,9 +44,6 @@ export default {
     PostTags,
     Gitalk
   },
-  mounted(){
-    console.log(this.$page.post.path);
-  },
   metaInfo () {
     return {
       title: this.$page.post.title,
