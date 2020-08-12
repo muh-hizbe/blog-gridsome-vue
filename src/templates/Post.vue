@@ -58,10 +58,6 @@ export default {
 }
 </script>
 
-<script>
-    
-</script>
-
 <page-query>
 query Post ($id: ID!) {
   post: post (id: $id) {
@@ -97,6 +93,7 @@ query Post ($id: ID!) {
     margin-top: calc(var(--space) * -1);
     margin-bottom: calc(var(--space) / 2);
     overflow: hidden;
+    // border-radius: var(--radius) var(--radius) 0 0;
 
     img {
       width: 100%;
