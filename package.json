@@ -7,7 +7,7 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@allanchain/gridsome-plugin-pwa": "^0.2.5",
+    "@allanchain/gridsome-plugin-pwa": "^0.3.0",
     "@gridsome/plugin-google-analytics": "^0.1.0",
     "@gridsome/plugin-sitemap": "^0.4.0",
     "@gridsome/remark-prismjs": "^0.3.0",
