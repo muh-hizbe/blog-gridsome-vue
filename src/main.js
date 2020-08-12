@@ -40,7 +40,7 @@ export default function (Vue, { router, head, isClient }) {
 
     head.meta.push({
         name: 'keywords',
-        content: 'Hizbe,Blog,Hizbullah,Hizbu,JavaScript'
+        content: 'Hizbe, Blog, Hizbullah, Hizbu, JavaScript'
     })
 
     head.meta.push({
