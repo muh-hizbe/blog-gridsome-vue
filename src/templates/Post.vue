@@ -30,8 +30,9 @@
   </Layout>
 </template>
 
+
+
 <script>
-import 'vue-gitalk/dist/vue-gitalk.css';
 import Gitalk from 'vue-gitalk';
 import PostMeta from '~/components/PostMeta';
 import PostTags from '~/components/PostTags';
