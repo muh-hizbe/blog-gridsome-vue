@@ -25,16 +25,6 @@
 
     <div class="post-comments">
         <Gitalk :config={id:$page.post.path} />
-        <!-- <div id="hyvor-talk-view"></div>
-        <script type="text/javascript">
-            var HYVOR_TALK_WEBSITE = 1433; // DO NOT CHANGE THIS
-            var HYVOR_TALK_CONFIG = {
-                url: "https://hizbe-blog.netlify.app",
-                id: this.$page.post.path,
-                loadMode: 'scroll'
-            };
-        </script>
-        <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script> -->
     </div>
     
   </Layout>
