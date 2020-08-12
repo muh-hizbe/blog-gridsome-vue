@@ -30,6 +30,25 @@
   </Layout>
 </template>
 
+<page-query>
+query Post ($id: ID!) {
+  post: post (id: $id) {
+    title
+    path
+    date (format: "D MMMM YYYY")
+    timeToRead
+    tags {
+      id
+      title
+      path
+    }
+    description
+    content
+    cover_image
+  }
+}
+</page-query>
+
 <script>
 import 'vue-gitalk/dist/vue-gitalk.css';
 import Gitalk from 'vue-gitalk';
@@ -57,29 +76,6 @@ export default {
   }
 }
 </script>
-
-<script>
-    
-</script>
-
-<page-query>
-query Post ($id: ID!) {
-  post: post (id: $id) {
-    title
-    path
-    date (format: "D MMMM YYYY")
-    timeToRead
-    tags {
-      id
-      title
-      path
-    }
-    description
-    content
-    cover_image
-  }
-}
-</page-query>
 
 <style lang="scss">
 .post-title {
