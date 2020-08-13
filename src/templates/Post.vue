@@ -30,6 +30,8 @@
   </Layout>
 </template>
 
+<script></script>
+
 <page-query>
 query Post ($id: ID!) {
   post: post (id: $id) {
