@@ -24,7 +24,7 @@
     </div>
 
     <div class="post-comments">
-        <!-- <Gitalk :config={id:$page.post.path} /> -->
+        <Gitalk :config={path} />
     </div>
     
   </Layout>
@@ -50,6 +50,10 @@ query Post ($id: ID!) {
 </page-query>
 
 <script>
+
+</script>
+
+<script>
 import 'vue-gitalk/dist/vue-gitalk.css'
 import Gitalk from 'vue-gitalk'
 import PostMeta from '@/components/PostMeta'
@@ -57,23 +61,28 @@ import PostTags from '@/components/PostTags'
 import Author from '@/components/Author.vue'
 
 export default {
-  components: {
-    Author,
-    PostMeta,
-    PostTags,
-    Gitalk
-  },
-  metaInfo () {
-    return {
-      title: this.$page.post.title,
-      meta: [
-        {
-          name: 'description',
-          content: this.$page.post.description
+    data(){
+        return{
+            path: this.$page.post.path
         }
-      ]
+    },
+    components: {
+        Author,
+        PostMeta,
+        PostTags,
+        Gitalk
+    },
+    metaInfo () {
+        return {
+            title: this.$page.post.title,
+            meta: [
+                {
+                    name: 'description',
+                    content: this.$page.post.description
+                }
+            ]
+        }
     }
-  }
 }
 </script>
 
