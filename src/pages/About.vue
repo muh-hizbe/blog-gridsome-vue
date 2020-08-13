@@ -22,8 +22,8 @@
 </template>
 
 <script>
-import Author from '~/components/Author.vue'
-import Navbar from '~/components/Navbar.vue'
+import Author from '@/components/Author.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
   components: {

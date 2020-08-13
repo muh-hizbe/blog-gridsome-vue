@@ -32,10 +32,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-import Navbar from '~/components/Navbar.vue'
-import ToggleTheme from '~/components/ToggleTheme.vue'
-import ToggleUp from '~/components/ToggleUp.vue'
+import Logo from '@/components/Logo.vue'
+import Navbar from '@/components/Navbar.vue'
+import ToggleTheme from '@/components/ToggleTheme.vue'
+import ToggleUp from '@/components/ToggleUp.vue'
 
 export default {
     props: {

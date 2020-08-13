@@ -30,8 +30,6 @@
   </Layout>
 </template>
 
-<script></script>
-
 <page-query>
 query Post ($id: ID!) {
   post: post (id: $id) {
@@ -54,9 +52,9 @@ query Post ($id: ID!) {
 <script>
 import 'vue-gitalk/dist/vue-gitalk.css'
 import Gitalk from 'vue-gitalk'
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
-import Author from '~/components/Author.vue'
+import PostMeta from '@/components/PostMeta'
+import PostTags from '@/components/PostTags'
+import Author from '@/components/Author.vue'
 
 export default {
   components: {

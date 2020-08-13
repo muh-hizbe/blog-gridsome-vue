@@ -44,7 +44,7 @@ query($page: Int) {
 
 <script>
 import { Pager } from 'gridsome'
-import ArchieveCard from '~/components/ArchieveCard.vue'
+import ArchieveCard from '@/components/ArchieveCard.vue'
 
 export default {
   components: {

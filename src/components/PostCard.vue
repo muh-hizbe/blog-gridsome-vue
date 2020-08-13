@@ -16,8 +16,8 @@
 </template>
 
 <script>
-import PostMeta from '~/components/PostMeta'
-import PostTags from '~/components/PostTags'
+import PostMeta from '@/components/PostMeta'
+import PostTags from '@/components/PostTags'
 
 export default {
   components: {

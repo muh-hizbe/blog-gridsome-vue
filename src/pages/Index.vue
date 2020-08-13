@@ -44,8 +44,8 @@ query($page: Int) {
 
 <script>
 import { Pager } from 'gridsome'
-import Author from '~/components/Author.vue'
-import PostCard from '~/components/PostCard.vue'
+import Author from '@/components/Author.vue'
+import PostCard from '@/components/PostCard.vue'
 
 export default {
   components: {
