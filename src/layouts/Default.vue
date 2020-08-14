@@ -85,8 +85,8 @@ export default {
 
 .toggle__left {
     position: fixed;
-    margin: 0 auto;
-    bottom:10px;
+    right: 15px;
+    bottom: 60px;
     z-index: 10;
 }
 

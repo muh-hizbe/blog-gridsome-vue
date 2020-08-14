@@ -1,7 +1,7 @@
 <template>
 	<a class="arrow-up" @click="toTop" id="to_top" v-show="visible" title="go to top">
 	  <span class="arrow-up__span">
-	    scroll to top
+	    &uarr;
 	  </span>
 	</a>
 </template>
@@ -47,16 +47,16 @@ export default {
 .arrow-up {
     text-decoration: none;
     padding: 8px 15px;  
+    background-color: transparent;
     border: 0;
     border-radius: 0.5rem;
-    color: var(--text-toggle);
-    background-color: var(--bg-toggle);
-    opacity: 0.8;
+    color: var(--link-color);
+    background-color: var(--body-color);
     box-shadow: var(--box-shadow);
     cursor: pointer;
 
     &:hover {
-        opacity: 1;
+        opacity: .8
     }
     &:focus {
         outline: none;
