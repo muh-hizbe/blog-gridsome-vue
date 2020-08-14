@@ -16,7 +16,9 @@ body {
 	--text-blockquote-color: #413e3e;
 	--link-color: #6b17e6;
 	--border-color:  rgb(63, 17, 90);;
-	--hover-card-body: #F3F7F9;
+    --hover-card-body: #F3F7F9;
+    --bg-toggle: rgba(7, 7, 7, 0.493);
+    --text-toggle: #ffffff;
 	--space: 2.5rem;
 	--content-width: 860px;
 	--header-height: 80px;
@@ -49,5 +51,7 @@ body[data-theme="dark"] {
  	--border-color:  #dfe23f;
  	--body-color: #ced8de;
  	--title-color: #fff;
- 	--link-color: #af9cef;
+    --link-color: #af9cef;
+    --bg-toggle: rgba(255, 255, 255, 0.493);
+    --text-toggle: #000000;
 }
