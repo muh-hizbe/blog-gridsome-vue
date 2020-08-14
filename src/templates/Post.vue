@@ -24,15 +24,11 @@
     </div>
 
     <div class="post-comments">
-        <!-- <Gitalk :config="{id: $page.post.id}" /> -->
+        <Gitalk :config= {id:$page.post.id} />
     </div>
     
   </Layout>
 </template>
-
-<script>
-
-</script>
 
 <page-query>
 query Post ($id: ID!) {
@@ -49,12 +45,14 @@ query Post ($id: ID!) {
     }
     description
     content
-    cover_image (blur: 30)
+    cover_image
   }
 }
 </page-query>
 
 <script>
+import 'vue-gitalk/dist/vue-gitalk.css'
+import Gitalk from 'vue-gitalk'
 import PostMeta from '@/components/PostMeta'
 import PostTags from '@/components/PostTags'
 import Author from '@/components/Author.vue'
@@ -67,7 +65,6 @@ export default {
     },
     mounted() {
         this.isMounted = true;
-        console.log('data tampil' + this.$page.post.path);
     },
     components: {
         Author,

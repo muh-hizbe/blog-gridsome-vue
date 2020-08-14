@@ -1,9 +1,7 @@
 // Import main css
 import '@/assets/style/index.scss'
-import 'vue-gitalk/dist/vue-gitalk.css'
 // Import default layout so we don't need to import it to every page
 import DefaultLayout from '@/layouts/Default.vue'
-import Gitalk from 'vue-gitalk'
 // The Client API can be used here. Learn more: gridsome.org/docs/client-api
 export default function (Vue, { router, head, isClient }) {
     if (isClient && process.env.NODE_ENV === 'production') {
@@ -61,5 +59,4 @@ export default function (Vue, { router, head, isClient }) {
 
     // Set default layout as a global component
     Vue.component('Layout', DefaultLayout)
-    Vue.component('Gitalk', Gitalk)
 }
