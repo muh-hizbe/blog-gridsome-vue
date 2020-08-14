@@ -24,7 +24,7 @@
     </div>
 
     <div class="post-comments">
-        <Gitalk :config={path} />
+        <Gitalk v-if="isMounted" :config={path} />
     </div>
     
   </Layout>
@@ -54,23 +54,24 @@ query Post ($id: ID!) {
 </page-query>
 
 <script>
-import 'vue-gitalk/dist/vue-gitalk.css'
-import Gitalk from 'vue-gitalk'
 import PostMeta from '@/components/PostMeta'
 import PostTags from '@/components/PostTags'
 import Author from '@/components/Author.vue'
 
 export default {
-    data(){
-        return{
+    data() {
+        return {
+            isMounted: false,            
             path: this.$page.post.path
         }
+    },
+    mounted() {
+        this.isMounted = true;
     },
     components: {
         Author,
         PostMeta,
         PostTags,
-        Gitalk
     },
     metaInfo () {
         return {
