@@ -5,7 +5,7 @@
         {{ $page.post.title }}
       </h1>
 
-      <PostMeta :post="$page.post" />
+      <PostMeta v-if="isMounted" :post="$page.post" />
 
       <hr>
 
@@ -24,7 +24,7 @@
     </div>
 
     <div class="post-comments">
-        <Gitalk :config="{id: $page.post.id}" />
+        <!-- <Gitalk :config="{id: $page.post.id}" /> -->
     </div>
     
   </Layout>
@@ -67,6 +67,7 @@ export default {
     },
     mounted() {
         this.isMounted = true;
+        console.log('data tampil' + this.$page.post.path);
     },
     components: {
         Author,
