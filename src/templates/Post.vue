@@ -24,7 +24,7 @@
     </div>
 
     <div class="post-comments">
-        <Gitalk v-if="isMounted" :config={path} />
+        <Gitalk v-if="isMounted" :config={id:path} />
     </div>
     
   </Layout>
