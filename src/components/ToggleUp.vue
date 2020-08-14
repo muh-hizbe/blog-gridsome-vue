@@ -49,8 +49,8 @@ export default {
     padding: 8px 15px;  
     border: 0;
     border-radius: 0.5rem;
-    color: var(--link-color);
-    background-color: var(--body-color);
+    color: var(--text-toggle);
+    background-color: var(--bg-toggle);
     opacity: 0.8;
     box-shadow: var(--box-shadow);
     cursor: pointer;
