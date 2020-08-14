@@ -15,4 +15,4 @@ Blog ini ada bukan hanya sekedar ada secara tiba-tiba ala kadabra 🎉. Namun bl
 
 Dah cuma itu aja sih yang ingin aku kasih tau ke kalian 😁.
 
-Sampai jumpa di postingan yang lainnya. See you next 😉.
+Sampai jumpa di postingan yang lainnya. See you on next article 😉.
