@@ -47,10 +47,9 @@ export default {
 .arrow-up {
     text-decoration: none;
     padding: 8px 15px;  
-    background-color: transparent;
     border: 0;
     border-radius: 0.5rem;
-    color: var(--bg-color);
+    color: var(--link-color);
     background-color: var(--body-color);
     box-shadow: var(--box-shadow);
     cursor: pointer;
