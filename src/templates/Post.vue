@@ -51,8 +51,6 @@ query Post ($id: ID!) {
 </page-query>
 
 <script>
-import 'vue-gitalk/dist/vue-gitalk.css'
-import Gitalk from 'vue-gitalk'
 import PostMeta from '@/components/PostMeta'
 import PostTags from '@/components/PostTags'
 import Author from '@/components/Author.vue'
