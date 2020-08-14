@@ -24,7 +24,7 @@
     </div>
 
     <div class="post-comments">
-        <Gitalk :config={id:$page.post.title} />
+        <Gitalk v-if="isMounted" :config={id:$page.post.path} />
     </div>
     
   </Layout>
@@ -66,6 +66,7 @@ export default {
     },
     mounted() {
         this.isMounted = true;
+        console.log(this.$page.post);
     },
     components: {
         Author,
