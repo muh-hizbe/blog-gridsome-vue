@@ -24,7 +24,7 @@
     </div>
 
     <div class="post-comments">
-        <Gitalk :config="{id: $page.post.path}" />
+        <Gitalk :config="{id: $page.post.id}" />
     </div>
     
   </Layout>
@@ -37,6 +37,7 @@
 <page-query>
 query Post ($id: ID!) {
   post: post (id: $id) {
+    id
     title
     path
     date (format: "D MMMM YYYY")
