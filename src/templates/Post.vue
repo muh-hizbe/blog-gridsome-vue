@@ -24,7 +24,7 @@
     </div>
 
     <div class="post-comments">
-        <Gitalk v-if="isMounted" :config={id:path} />
+        <Gitalk v-if="isMounted" :config={id:$page.post.path} />
     </div>
     
   </Layout>
@@ -62,7 +62,6 @@ export default {
     data() {
         return {
             isMounted: false,            
-            path: this.$page.post.path
         }
     },
     mounted() {
