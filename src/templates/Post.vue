@@ -24,7 +24,7 @@
     </div>
 
     <div class="post-comments">
-        <Gitalk :config= {id:$page.post.id} />
+        <Gitalk :config={id:$page.post.id} />
     </div>
     
   </Layout>
