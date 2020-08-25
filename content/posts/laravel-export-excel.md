@@ -37,7 +37,10 @@ di dalam file `config/app.php`.
     ]
 ```
 
-Sama halnya dengan kode berikut `'Excel' => Maatwebsite\Excel\Facades\Excel::class,`
+Sama halnya dengan kode berikut
+```bash
+    'Excel' => Maatwebsite\Excel\Facades\Excel::class,
+```
 
 ```bash
     'aliases' => [
@@ -119,7 +122,11 @@ Pada tahap ini kita akan setting file controller kita supaya bisa mengunduh file
         }
     }
 ```
-Diatas adalah contoh bagaimana kita mengunduh filenya tepatnya pada `function export`, dan pada `return Excel::download(new UsersExport, 'users.xlsx');` kita lihat pada `new UsersExport` bisa kita sesuaikan dengan file Export yang akan kita ekspor datanya ke dalam sebuah file yang bernama `users.xlsx`, nama file `users.xlsx` bisa kita ganti sesuka kita, dan untuk formatnya `.xlsx` bisa kita ganti juga sesuai format yang tersedia seperti `.csv .tsv .ods .xls .html` dan yang lainnya, format lainnya bisa lihat di [dokumentasinya](https://docs.laravel-excel.com/3.1/exports/export-formats.html)
+Diatas adalah contoh bagaimana kita mengunduh filenya tepatnya pada `function export`, dan pada
+```bash
+    return Excel::download(new UsersExport, 'users.xlsx');
+```
+kita lihat pada `new UsersExport` bisa kita sesuaikan dengan file Export yang akan kita ekspor datanya ke dalam sebuah file yang bernama `users.xlsx`, nama file `users.xlsx` bisa kita ganti sesuka kita, dan untuk formatnya `.xlsx` bisa kita ganti juga sesuai format yang tersedia seperti `.csv .tsv .ods .xls .html` dan yang lainnya, format lainnya bisa lihat di [dokumentasinya](https://docs.laravel-excel.com/3.1/exports/export-formats.html)
 
 ## 5.  Download File - Route
 
