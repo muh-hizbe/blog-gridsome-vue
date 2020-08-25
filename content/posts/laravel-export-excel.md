@@ -23,12 +23,12 @@ Pertamakali yang harus kita lakukan yaitu tidak lain adalah instalasi. Cukup mud
 ```
 
 Kemudian kita tambahkan baris kode
-```bash
+```php
     Maatwebsite\Excel\ExcelServiceProvider::class,
 ```
 di dalam file `config/app.php`.
 
-```bash
+```php
     'providers' => [
         /*
         * Package Service Providers...
@@ -38,11 +38,11 @@ di dalam file `config/app.php`.
 ```
 
 Sama halnya dengan kode berikut
-```bash
+```php
     'Excel' => Maatwebsite\Excel\Facades\Excel::class,
 ```
 
-```bash
+```php
     'aliases' => [
         ...
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
@@ -74,7 +74,7 @@ Nanti filenya Export yang kita buat terdapat pada folder `app/Exports`, dan kita
 
 Yaa betul sekali, pada tahap ini kita akan langsung mengekspor data dari database, caranya cukup mudah. Tambahkan baris kode pada file Export yang telah kita buat sebelumnya hingga tampak seperti di bawah ini.
 
-```bash
+```php
     <?php
 
     namespace App\Exports;
@@ -94,7 +94,7 @@ Yaa betul sekali, pada tahap ini kita akan langsung mengekspor data dari databas
 Nahh anda dapat mengganti `use App\Users;` dan `User::all();` sesuai dengan kebutuhan projek anda.
 Sedikit saya jelaskan,
 
-```bash
+```php
     public function collection()
     {
         return User::all();
@@ -106,7 +106,7 @@ baris kode berikut untuk mengambil seluruh data dari dari database melalui model
 
 Pada tahap ini kita akan setting file controller kita supaya bisa mengunduh file dari data excel yang telah kita buat di file Export sebelumnya.
 
-```bash
+```php
     <?php
 
     namespace App\Http\Controllers;
@@ -123,7 +123,7 @@ Pada tahap ini kita akan setting file controller kita supaya bisa mengunduh file
     }
 ```
 Diatas adalah contoh bagaimana kita mengunduh filenya tepatnya pada `function export`, dan pada
-```bash
+```php
     return Excel::download(new UsersExport, 'users.xlsx');
 ```
 kita lihat pada `new UsersExport` bisa kita sesuaikan dengan file Export yang akan kita ekspor datanya ke dalam sebuah file yang bernama `users.xlsx`, nama file `users.xlsx` bisa kita ganti sesuka kita, dan untuk formatnya `.xlsx` bisa kita ganti juga sesuai format yang tersedia seperti `.csv .tsv .ods .xls .html` dan yang lainnya, format lainnya bisa lihat di [dokumentasinya](https://docs.laravel-excel.com/3.1/exports/export-formats.html)
@@ -132,7 +132,7 @@ kita lihat pada `new UsersExport` bisa kita sesuaikan dengan file Export yang ak
 
 Voilaa! sebentar lagi selesai, tahap sebelum akhir pada artikel ini adalah membuat route nya, tidak bisa kita mengunduh file nya tanpa ada alamat url yang kita akses kan. Langsung saja, saya percaya teman-teman sudah sangat mudah membuat route, tapi tetap akan saya jelaskan disini 😅.
 
-```bash
+```php
     Route::get('users/export/', 'UsersController@export');
 ```
 
