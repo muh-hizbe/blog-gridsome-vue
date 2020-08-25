@@ -23,7 +23,12 @@ code {
   padding: .2em .5em;
 }
 
-code .operator, code .token {
+code .operator {
+    background: none !important;
+}
+
+code .entity {
+    color: var(--text-code-color) !important;
     background: none !important;
 }
 
