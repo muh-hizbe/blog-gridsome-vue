@@ -10,7 +10,7 @@ description: "Bagaimana cara mengekspor data dari database ke bentuk file excel?
 ---
 
 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
-<h2>Mari download file excel di Laravel 📁</h2>
+<h2>Mari Ekspor file excel di Laravel 📁 - Part #1</h2>
 
 Pada artikel ini kita akan bahas bagaimana cara sederhananya ekspor data ke file excel dari database di Laravel menggunakan sebuah package [**Laravel-Excel**](https://github.com/maatwebsite/Laravel-Excel), okay langsung saja kita mulai.
 
