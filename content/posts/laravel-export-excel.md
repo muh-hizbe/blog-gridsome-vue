@@ -1,6 +1,6 @@
 ---
 title: Export file Excel di Laravel
-date: 2020-05-25
+date: 2020-08-25
 published: true
 tags: ['Laravel', 'Laravel7', 'Coding']
 # cover_image: https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
@@ -64,9 +64,9 @@ Yaa mari kita buat file Export nya dengan perintah berikut di terminal/commandli
 ```bash
     php artisan make:export UsersExport --model=User
 ```
-Sedikit saya jelaskan, `UsersExport` adalah nama file dan class Export yang akan kita buat nantinya, bisa anda sesuaikan sesuai kebutuhan, misal ingin mengekspor data `Book` bisa ditulis `BooksExport`.
+Sedikit saya jelaskan, `UsersExport` adalah nama file dan class Export yang akan kita buat nantinya, bisa anda sesuaikan dengan kebutuhan anda, misal ingin mengekspor data `Book` bisa ditulis `BooksExport`.
 
-Kemudian untuk `--model=User` adalah model yang akan kita kaitkan atau gunakan di dalal file Export yang akan kita buat, jadi sesuaikan dengan milik kawan-kawan ya.
+Kemudian untuk `--model=User` adalah model yang akan kita kaitkan atau gunakan di dalam file Export yang akan kita buat, jadi sesuaikan dengan milik kawan-kawan ya.
 
 Nanti filenya Export yang kita buat terdapat pada folder `app/Exports`, dan kita berhasil membuat file dan class nya.
 
@@ -122,7 +122,7 @@ Pada tahap ini kita akan setting file controller kita supaya bisa mengunduh file
         }
     }
 ```
-Diatas adalah contoh bagaimana kita mengunduh filenya tepatnya pada `function export`, dan pada
+Diatas adalah contoh bagaimana kita mengunduh filenya tepatnya pada `function export`, dan di
 ```php
     return Excel::download(new UsersExport, 'users.xlsx');
 ```
@@ -136,7 +136,7 @@ Voilaa! sebentar lagi selesai, tahap sebelum akhir pada artikel ini adalah membu
     Route::get('users/export/', 'UsersController@export');
 ```
 
-Jadi `'users/export/'` adalha alamat url yang akan kita akses nantinya untuk mengunduh file excel. Dana `'UsersController@export'` adalah **controller** yang kita miliki dengan `@export` adalah method atau function yang terdapat di file controller kita tadi.
+Jadi `'users/export/'` adalaH alamat url yang akan kita akses nantinya untuk mengunduh file excel. Dan `'UsersController@export'` adalah **controller** yang kita miliki dengan `@export` adalah method atau function yang terdapat di file controller kita tadi.
 
 ## 6.  Download File - Via browser
 
