@@ -68,7 +68,7 @@ Sedikit saya jelaskan, `UsersExport` adalah nama file dan class Export yang akan
 
 Kemudian untuk `--model=User` adalah model yang akan kita kaitkan atau gunakan di dalam file Export yang akan kita buat, jadi sesuaikan dengan milik kawan-kawan ya.
 
-Nanti filenya Export yang kita buat terdapat pada folder `app/Exports`, dan kita berhasil membuat file dan class nya.
+Nantinya file Export yang kita buat terdapat pada folder `app/Exports`, akhirnya kita berhasil membuat file dan class nya.
 
 ## 3.  Export data - Export File
 
@@ -100,7 +100,7 @@ Sedikit saya jelaskan,
         return User::all();
     }
 ```
-baris kode berikut untuk mengambil seluruh data dari dari database melalui model `User` dan mengekspornya menjadi file excel, tapi belum cukup sampai disini. Kita belum bisa untuk mengunduh file excelnya.
+baris kode berikut untuk mengambil seluruh data dari database melalui model `User` dan mengekspornya menjadi file excel, tapi belum cukup sampai disini. Kita belum bisa untuk mengunduh file excelnya.
 
 ## 4.  Download File - Controller
 
@@ -136,7 +136,7 @@ Voilaa! sebentar lagi selesai, tahap sebelum akhir pada artikel ini adalah membu
     Route::get('users/export/', 'UsersController@export');
 ```
 
-Jadi `'users/export/'` adalaH alamat url yang akan kita akses nantinya untuk mengunduh file excel. Dan `'UsersController@export'` adalah **controller** yang kita miliki dengan `@export` adalah method atau function yang terdapat di file controller kita tadi.
+Jadi `'users/export/'` adalah alamat url yang akan kita akses nantinya untuk mengunduh file excel. Dan `'UsersController@export'` adalah **controller** yang kita miliki dengan `@export` adalah method atau function yang terdapat di file controller kita tadi.
 
 ## 6.  Download File - Via browser
 
