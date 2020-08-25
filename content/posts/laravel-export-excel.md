@@ -22,7 +22,12 @@ Pertamakali yang harus kita lakukan yaitu tidak lain adalah instalasi. Cukup mud
     composer require maatwebsite/excel
 ```
 
-Kemudian kita tambahkan baris kode `Maatwebsite\Excel\ExcelServiceProvider::class,` di dalam file `config/app.php`.
+Kemudian kita tambahkan baris kode
+```bash
+    Maatwebsite\Excel\ExcelServiceProvider::class,
+```
+di dalam file `config/app.php`.
+
 ```bash
     'providers' => [
         /*
