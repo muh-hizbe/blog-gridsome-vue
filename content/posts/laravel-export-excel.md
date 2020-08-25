@@ -18,12 +18,12 @@ Pada artikel ini kita akan bahas bagaimana cara sederhananya ekspor data ke file
 
 Pertamakali yang harus kita lakukan yaitu tidak lain adalah instalasi. Cukup mudah kita ketikkan command berikut di terminal/commandline kita, tentunya di dalam folder projek Laravel yang sudah kita install ya.
 
-```
+```bash
     composer require maatwebsite/excel
 ```
 
 Kemudian kita tambahkan baris kode berikut di dalam file `config/app.php` yang `Maatwebsite\Excel\ExcelServiceProvider::class,` yaa.
-```
+```bash
     'providers' => [
         /*
         * Package Service Providers...
@@ -33,7 +33,8 @@ Kemudian kita tambahkan baris kode berikut di dalam file `config/app.php` yang `
 ```
 
 Sama halnya dengan kode berikut `'Excel' => Maatwebsite\Excel\Facades\Excel::class,`
-```
+
+```bash
     'aliases' => [
         ...
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
@@ -41,7 +42,8 @@ Sama halnya dengan kode berikut `'Excel' => Maatwebsite\Excel\Facades\Excel::cla
 ```
 
 Kemudian buka lagi terminal/commandline kita, lalu ketikkan perintah berikut
-```
+
+```bash
     php artisan vendor:publish --provider="Maatwebsite\Excel\ExcelServiceProvider"
 ```
 
@@ -50,7 +52,8 @@ Yups anda selesai melakukan instalasinya.
 ## 2.  Membuat file Export
 
 Yaa mari kita buat file Export nya dengan perintah berikut di terminal/commandline kita
-```
+
+```bash
     php artisan make:export UsersExport --model=User
 ```
 Sedikit saya jelaskan, `UsersExport` adalah nama file dan class Export yang akan kita buat nantinya, bisa anda sesuaikan sesuai kebutuhan, misal ingin mengekspor data `Book` bisa ditulis `BooksExport`.
@@ -63,7 +66,7 @@ Nanti filenya Export yang kita buat terdapat pada folder `app/Exports`, dan kita
 
 Yaa betul sekali, pada tahap ini kita akan langsung mengekspor data dari database, caranya cukup mudah. Tambahkan baris kode pada file Export yang telah kita buat sebelumnya hingga tampak seperti di bawah ini.
 
-```
+```bash
     <?php
 
     namespace App\Exports;
@@ -82,7 +85,8 @@ Yaa betul sekali, pada tahap ini kita akan langsung mengekspor data dari databas
 
 Nahh anda dapat mengganti `use App\Users;` dan `User::all();` sesuai dengan kebutuhan projek anda.
 Sedikit saya jelaskan,
-```
+
+```bash
     public function collection()
     {
         return User::all();
@@ -93,7 +97,8 @@ baris kode berikut untuk mengambil seluruh data dari dari database melalui model
 ## 4.  Download File - Controller
 
 Pada tahap ini kita akan setting file controller kita supaya bisa mengunduh file dari data excel yang telah kita buat di file Export sebelumnya.
-```
+
+```bash
     <?php
 
     namespace App\Http\Controllers;
@@ -115,7 +120,7 @@ Diatas adalah contoh bagaimana kita mengunduh filenya tepatnya pada `function ex
 
 Voilaa! sebentar lagi selesai, tahap sebelum akhir pada artikel ini adalah membuat route nya, tidak bisa kita mengunduh file nya tanpa ada alamat url yang kita akses kan. Langsung saja, saya percaya teman-teman sudah sangat mudah membuat route, tapi tetap akan saya jelaskan disini 😅.
 
-```
+```bash
     Route::get('users/export/', 'UsersController@export');
 ```
 
