@@ -142,4 +142,7 @@ Jadi `'users/export/'` adalah alamat url yang akan kita akses nantinya untuk men
 
 Yeaayyy kita berhasil membuatnya, mari kita uji apakah berhasil? silahkan jalankan Laravel projek kawan-kawan dan tambahkan `/users/export` pada route link browser anda. Jika berhasil terdownload berarti anda sangat memahami artikel ini, namun bila anda belum paham silahkan tanyakan pada kolom komentar ya 😉.
 
+Atau bisa simak dalam sebuah video, silahkan klik pada tautan dibawah yaa 👇
+[Laravel Excel - #1 Basic Export](https://youtu.be/usVc9IgHpk4)
+
 See you on next article! 😇
