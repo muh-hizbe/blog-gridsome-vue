@@ -3,7 +3,7 @@ title: Export file Excel di Laravel
 date: 2020-08-25
 published: true
 tags: ['Laravel', 'Laravel7', 'Coding']
-cover_image: ![Image](./images/Larexcel-1.png)
+cover_image: ./images/Larexcel-1.png
 canonical_url: https://hizbe.dev
 description: "Bagaimana cara mengekspor data dari database ke bentuk file excel? Kita akan bahas dasar atau basic nya disini menggunakan sebuah package. Lets do it!"
 
