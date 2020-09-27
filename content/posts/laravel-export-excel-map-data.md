@@ -1,7 +1,7 @@
 ---
 title: Export file Excel di Laravel - Mapping Data
 date: 2020-09-27
-published: false
+published: true
 tags: ['Laravel', 'Laravel7', 'Coding']
 # cover_image: https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
 canonical_url: https://hizbe.dev
