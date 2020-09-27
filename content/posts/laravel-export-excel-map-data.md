@@ -126,7 +126,8 @@ Dan keseluruhan file `UsersExport` akan tampak seperti ini.
 Selanjutnya yaitu kita uji. Akses route yang sudah didaftarkan, lihat hasil unduhan file excel nya, kemudian buka. Apakah berhasil? Jika Ya, berarti anda luarbiasa. Jika belum berhasil silahkan tanyakan via kolom komentar ya.
 
 Playlist Laravel-Excel:
-1. [Mari Ekspor file excel di Laravel 📁 - Part #1]()
-2. [Mari Ekspor excel dengan kolom tertentu (Mappind Data) 🏷️ - Part #2]()
+
+1.  [Mari Ekspor file excel di Laravel 📁 - Part #1]()
+2.  [Mari Ekspor excel dengan kolom tertentu (Mappind Data) 🏷️ - Part #2]()
 
 See you on next article! 😇
