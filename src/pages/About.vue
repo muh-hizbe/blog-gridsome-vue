@@ -11,7 +11,7 @@
     tapi aku juga butuh money 💸 untuk keberlangsungan hidup 🤑.
 
     🔗 Kunjungi aku di dunia lain ya :
-    1. <g-link to="//linkedin.com/in/muhammad-hizbullah-736109168/">LinkedIn</g-link>
+    1. <g-link to="//linkedin.com/in/muhammad-hizbullah-736109168/">Linkedin</g-link>
     2. <g-link to="//github.com/muh-hizbe">Github</g-link>
     3. <g-link to="//twitter.com/muh__hizbullah">Twitter</g-link>
     4. <g-link to="//instagram.com/muh__hizbullah">Instagram</g-link>
