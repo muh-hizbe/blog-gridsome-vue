@@ -4,7 +4,7 @@ date: 2020-08-25
 published: true
 tags: ['Laravel', 'Laravel7', 'Coding']
 # cover_image: https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80
-canonical_url: https://hizbe-blog.netlify.app
+canonical_url: https://hizbe.dev
 description: "Bagaimana cara mengekspor data dari database ke bentuk file excel? Kita akan bahas dasar atau basic nya disini menggunakan sebuah package. Lets do it!"
 
 ---
@@ -142,8 +142,16 @@ Jadi `'users/export/'` adalah alamat url yang akan kita akses nantinya untuk men
 
 Yeaayyy kita berhasil membuatnya, mari kita uji apakah berhasil? silahkan jalankan Laravel projek kawan-kawan dan tambahkan `/users/export` pada route link browser anda. Jika berhasil terdownload berarti anda sangat memahami artikel ini, namun bila anda belum paham silahkan tanyakan pada kolom komentar ya 😉.
 
-Atau bisa simak dalam sebuah video, silahkan klik pada tautan dibawah yaa 👇
 
-[Laravel - #1 Export file (basic)](https://youtu.be/usVc9IgHpk4)
+
+Playlist Artikel Laravel-Excel:
+1.  [Mari Ekspor file excel di Laravel 📁 - Part #1](https://hizbe.dev/export-file-excel-di-laravel/)
+2.  [Mari Ekspor excel dengan kolom tertentu (Mappind Data) 🏷️ - Part #2](https://hizbe.dev/export-file-excel-di-laravel-mapping-data/)
+
+
+Atau bisa simak dalam sebuah video, silahkan klik pada salah satu tautan dibawah yaa 👇
+
+Playlist Video Laravel-Excel:
+1.  [Laravel - #1 Export file (basic)](https://youtu.be/usVc9IgHpk4)
 
 See you on next article! 😇
