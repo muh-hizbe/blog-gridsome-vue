@@ -10,7 +10,7 @@ description: "Kita akan bahas ekspor ke Excel dengan kolom tertentu saja, tidak 
 ---
 
 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
-<h2>Mari Ekspor excel dengan kolom tertentu (Mappind Data) 🏷️ - Part #2</h2>
+<h2>Mari Ekspor excel dengan kolom tertentu (Mapping Data) 🏷️ - Part #2</h2>
 
 Pada artikel seri sebelum ini kita sudah membahas bagaimana caranya mengekspor data dari database ke file Excel, naahh pada artikel ini kita akan belajar cara mengekspornya dengan kolom-kolom tertentu saja.
 
