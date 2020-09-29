@@ -61,6 +61,7 @@ export default {
             { name: 'description', content: 'Home page of personal blog by @hizbe' },
             { name: 'theme-color', content: '#213f9a' },
             { property: 'og:title', content: 'Hizbe Blog' },
+            { property: 'og:description', content: 'Home page of personal blog by @hizbe' },
             { property: 'og:type', content: 'website' },
             { property: 'og:url', conten: 'https://hizbe.dev' }
           ]
