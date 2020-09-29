@@ -51,15 +51,17 @@ export default {
     ArchieveCard,
     Pager
   },
-  metaInfo: {
-    title: 'Archieves',
-    meta: [
-        { name: 'author', content: 'Muhammad Hizbullah' },
-        { name: 'description', content: 'All archieve post saved here.' },
-        { property: 'og:title', content: 'Hizbe Blog' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', conten: 'https://hizbe.dev' }
-    ]
+  metaInfo() {
+      return {
+          title: 'Archieves',
+          meta: [
+              { name: 'author', content: 'Muhammad Hizbullah' },
+              { name: 'description', content: 'All archieve post saved here.' },
+              { property: 'og:title', content: 'Hizbe Blog' },
+              { property: 'og:type', content: 'website' },
+              { property: 'og:url', conten: 'https://hizbe.dev' }
+          ]
+      }
   }
 }
 </script>
