@@ -37,7 +37,7 @@ export default {
               { property: 'og:title', content: 'Hizbe Blog' },
               { property: 'og:type', content: 'website' },
               { property: 'og:url', content: 'https://hizbe.dev' },
-              { property: 'og:description', content: 'About me, please visit it'}
+              { property: 'og:description', content: 'About me, please visit it' }
           ]
       }
   }
