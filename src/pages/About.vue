@@ -36,7 +36,8 @@ export default {
           meta: [
               { property: 'og:title', content: 'Hizbe Blog' },
               { property: 'og:type', content: 'website' },
-              { property: 'og:url', conten: 'https://hizbe.dev' }
+              { property: 'og:url', content: 'https://hizbe.dev' },
+              { property: 'og:description', content: 'About me, please visit it'}
           ]
       }
   }
