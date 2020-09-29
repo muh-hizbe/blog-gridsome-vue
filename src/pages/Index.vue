@@ -53,13 +53,15 @@ export default {
     PostCard,
     Pager
   },
-  metaInfo: {
-    title: 'Home',
-    meta: [
-      { name: 'author', content: 'Muhammad Hizbullah' },
-      { name: 'description', content: 'Home page of personal blog by @hizbe' },
-      { name: 'theme-color', content: '#213f9a' }
-    ]
+  metaInfo() {
+      return {
+          title: 'Home',
+          meta: [
+            { name: 'author', content: 'Muhammad Hizbullah' },
+            { name: 'description', content: 'Home page of personal blog by @hizbe' },
+            { name: 'theme-color', content: '#213f9a' }
+          ]
+      }
   }
 }
 </script>
