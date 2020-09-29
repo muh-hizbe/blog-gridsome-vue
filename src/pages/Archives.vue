@@ -54,8 +54,11 @@ export default {
   metaInfo: {
     title: 'Archieves',
     meta: [
-      { name: 'author', content: 'Muhammad Hizbullah' },
-      { name: 'description', content: 'All archieve post saved here.' },
+        { name: 'author', content: 'Muhammad Hizbullah' },
+        { name: 'description', content: 'All archieve post saved here.' },
+        { property: 'og:title', content: 'Hizbe Blog' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', conten: 'https://hizbe.dev' }
     ]
   }
 }
