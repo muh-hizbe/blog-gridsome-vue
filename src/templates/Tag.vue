@@ -52,8 +52,10 @@ export default {
     Author,
     PostCard
   },
-  metaInfo: {
-    title: this.$page.tag.title
+  metaInfo () {
+      return {
+          title: this.$page.tag.title,
+      }
   }
 }
 </script>
