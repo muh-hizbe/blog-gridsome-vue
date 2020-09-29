@@ -59,7 +59,10 @@ export default {
           meta: [
             { name: 'author', content: 'Muhammad Hizbullah' },
             { name: 'description', content: 'Home page of personal blog by @hizbe' },
-            { name: 'theme-color', content: '#213f9a' }
+            { name: 'theme-color', content: '#213f9a' },
+            { property: 'og:title', content: 'Hizbe Blog' },
+            { property: 'og:type', content: 'website' },
+            { property: 'og:url', conten: 'https://hizbe.dev' }
           ]
       }
   }
