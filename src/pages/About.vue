@@ -37,7 +37,11 @@ export default {
               { property: 'og:title', content: 'Hizbe Blog' },
               { property: 'og:type', content: 'website' },
               { property: 'og:url', content: 'https://hizbe.dev/about' },
-              { property: 'og:description', content: 'About me, please visit it' }
+              { property: 'og:description', content: 'About me, please visit it' },
+              { name: 'twitter:title', content: 'Hizbe Blog' },
+              { name: 'twitter:card', content: 'summary' },
+              { name: 'twitter:url', content: 'https://hizbe.dev/about' },
+              { name: 'twitter:description', content: 'About me, please visit it' }
           ]
       }
   }

@@ -62,8 +62,12 @@ export default {
             { name: 'theme-color', content: '#213f9a' },
             { property: 'og:title', content: 'Hizbe Blog' },
             { property: 'og:description', content: 'Home page of personal blog by @hizbe' },
-            { property: 'og:type', content: 'website' },
-            { property: 'og:url', content: 'https://hizbe.dev' }
+            { property: 'og:type', content: 'blog' },
+            { property: 'og:url', content: 'https://hizbe.dev' },
+            { name: 'twitter:title', content: 'Hizbe Blog' },
+            { name: 'twitter:description', content: 'Home page of personal blog by @hizbe' },
+            { name: 'twitter:card', content: 'summary' },
+            { name: 'twitter:url', content: 'https://hizbe.dev' }
           ]
       }
   }
