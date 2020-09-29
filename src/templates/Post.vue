@@ -77,8 +77,7 @@ export default {
                 { property: 'og:title', content: this.$page.post.title },
                 { property: 'og:description', content: this.$page.post.description },
                 { property: 'og:type', content: 'website' },
-                { property: 'og:url', content: `https://hizbe.dev/${this.$page.post.path}` },
-                { property: 'og:image', content: this.$page.post.cover_image }
+                { property: 'og:url', content: `https://hizbe.dev/${this.$page.post.path}` }
             ]
         }
     }
