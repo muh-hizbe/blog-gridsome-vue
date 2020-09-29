@@ -30,13 +30,15 @@ export default {
     Author,
     Navbar,
   },
-  metaInfo: {
-    title: 'About',
-    meta: [
-        { property: 'og:title', content: 'Hizbe Blog' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:url', conten: 'https://hizbe.dev' }
-    ]
+  metaInfo() {
+      return {
+          title: 'About',
+          meta: [
+              { property: 'og:title', content: 'Hizbe Blog' },
+              { property: 'og:type', content: 'website' },
+              { property: 'og:url', conten: 'https://hizbe.dev' }
+          ]
+      }
   }
 }
 </script>
