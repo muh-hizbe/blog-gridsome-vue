@@ -31,7 +31,12 @@ export default {
     Navbar,
   },
   metaInfo: {
-    title: 'About'
+    title: 'About',
+    meta: [
+        { property: 'og:title', content: 'Hizbe Blog' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', conten: 'https://hizbe.dev' }
+    ]
   }
 }
 </script>
