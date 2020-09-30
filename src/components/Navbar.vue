@@ -6,7 +6,7 @@
             </div>
             <div class="nav-right">
                 <g-link to="/about">About</g-link> |
-                <g-link to="/archives">Archieves</g-link>
+                <g-link to="/archives">Archives</g-link>
                 <!-- <g-link to="/my-works">My works</g-link> -->
             </div>
         </div>
