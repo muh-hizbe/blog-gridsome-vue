@@ -58,7 +58,7 @@ export default {
               { name: 'author', content: 'Muhammad Hizbullah' },
               { name: 'description', content: 'All archieve post saved here.' },
               { property: 'og:title', content: 'Hizbe Blog' },
-              { property: 'description', content: 'All archieve post saved here.' },
+              { property: 'og:description', content: 'All archieve post saved here.' },
               { property: 'og:type', content: 'website' },
               { property: 'og:url', conten: 'https://hizbe.dev' },
               { name: 'twitter:title', content: 'Hizbe Blog' },
