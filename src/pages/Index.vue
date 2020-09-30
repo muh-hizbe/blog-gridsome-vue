@@ -63,7 +63,7 @@ export default {
             { property: 'og:title', content: 'Hizbe Blog' },
             { property: 'og:description', content: 'Home page of personal blog by @hizbe' },
             { property: 'og:type', content: 'website' },
-            { property: 'og:image', content: '../assets/images/home.jpg' },
+            { property: 'og:image', content: '../../content/posts/images/home.jpg' },
             { property: 'og:url', content: 'https://hizbe.dev' },
             { name: 'twitter:title', content: 'Hizbe Blog' },
             { name: 'twitter:description', content: 'Home page of personal blog by @hizbe' },
