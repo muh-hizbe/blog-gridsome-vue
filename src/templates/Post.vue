@@ -81,8 +81,8 @@ export default {
                 { property: 'og:url', content: `https://hizbe.dev${this.$page.post.path}` },
                 { name: 'twitter:title', content: this.$page.post.title },
                 { name: 'twitter:description', content: this.$page.post.description },
-                { name: 'twitter:card', content: 'summary_large_image' },
                 { name: 'twitter:image', content: this.$page.post.cover_image },
+                { name: 'twitter:card', content: 'summary' },
                 { name: 'twitter:url', content: `https://hizbe.dev${this.$page.post.path}` }
             ]
         }
