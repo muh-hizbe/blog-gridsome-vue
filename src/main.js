@@ -17,7 +17,7 @@ export default function (Vue, { router, head, isClient }) {
 
     head.link.push({
         rel: 'canonical',
-        href: 'https://hizbe-blog.netlify.app'
+        href: 'https://hizbe.dev'
     })
 
     head.link.push({
