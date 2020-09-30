@@ -62,7 +62,7 @@ export default {
               { property: 'og:url', content: `https://hizbe.dev/tag/${this.$page.tag.title}/` },
               { name: 'twitter:title', content: this.$page.tag.title },
               { name: 'twitter:description', content: `All post of ${this.$page.tag.title} tag name` },
-              { name: 'twitter:card', content: 'summary' },
+              { name: 'twitter:card', content: 'summary_large_image' },
               { name: 'twitter:url', content: `https://hizbe.dev/tag/${this.$page.tag.title}/` }
           ]
       }
