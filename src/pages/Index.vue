@@ -63,7 +63,6 @@ export default {
             { property: 'og:title', content: 'Home' },
             { property: 'og:description', content: 'Home page of personal blog by @hizbe' },
             { property: 'og:type', content: 'website' },
-            { property: 'og:image', content: '/opt/build/repo/content/posts/images/home.jpg' },
             { property: 'og:url', content: 'https://hizbe.dev' },
             { name: 'twitter:title', content: 'Home' },
             { name: 'twitter:description', content: 'Home page of personal blog by @hizbe' },
