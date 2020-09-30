@@ -1,7 +1,7 @@
 <template>
     <Layout :show-logo="false">
         <div class="grid-container text-center">
-            <h1 class="m-center text-center">Archieves</h1>
+            <h1 class="m-center text-center">Archives</h1>
         </div>
 
         <div class="grid-container">
@@ -53,7 +53,7 @@ export default {
   },
   metaInfo() {
       return {
-          title: 'Archieves',
+          title: 'Archives',
           meta: [
               { name: 'author', content: 'Muhammad Hizbullah' },
               { name: 'description', content: 'All archieve post saved here.' },
