@@ -60,14 +60,14 @@ export default {
             { name: 'author', content: 'Muhammad Hizbullah' },
             { name: 'description', content: 'Home page of personal blog by @hizbe' },
             { name: 'theme-color', content: '#213f9a' },
-            { property: 'og:title', content: 'Home' },
-            { property: 'og:description', content: 'Home page of personal blog by @hizbe' },
             { property: 'og:type', content: 'website' },
             { property: 'og:url', content: 'https://hizbe.dev' },
+            { property: 'og:title', content: 'Home' },
+            { property: 'og:description', content: 'Home page of personal blog by @hizbe' },
+            { name: 'twitter:card', content: 'summary_large_image' },
+            { name: 'twitter:url', content: 'https://hizbe.dev' },
             { name: 'twitter:title', content: 'Home' },
             { name: 'twitter:description', content: 'Home page of personal blog by @hizbe' },
-            { name: 'twitter:card', content: 'summary_large_image' },
-            { name: 'twitter:url', content: 'https://hizbe.dev' }
           ]
       }
   }

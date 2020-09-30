@@ -74,16 +74,16 @@ export default {
             title: this.$page.post.title,
             meta: [
                 { name: 'description', content: this.$page.post.description },
+                { property: 'og:type', content: 'website' },
+                { property: 'og:url', content: `https://hizbe.dev${this.$page.post.path}` },
                 { property: 'og:title', content: this.$page.post.title },
                 { property: 'og:description', content: this.$page.post.description },
-                { property: 'og:type', content: 'website' },
                 { property: 'og:image', content: this.$page.post.cover_image },
-                { property: 'og:url', content: `https://hizbe.dev${this.$page.post.path}` },
+                { name: 'twitter:card', content: 'summary' },
+                { name: 'twitter:url', content: `https://hizbe.dev${this.$page.post.path}` },
                 { name: 'twitter:title', content: this.$page.post.title },
                 { name: 'twitter:description', content: this.$page.post.description },
                 { name: 'twitter:image', content: this.$page.post.cover_image },
-                { name: 'twitter:card', content: 'summary' },
-                { name: 'twitter:url', content: `https://hizbe.dev${this.$page.post.path}` }
             ]
         }
     }
