@@ -34,6 +34,8 @@ export default {
       return {
           title: 'About',
           meta: [
+              { name: 'author', content: 'Muhammad Hizbullah' },
+              { name: 'description', content: 'About me, please visit it' },
               { property: 'og:title', content: 'Hizbe Blog' },
               { property: 'og:type', content: 'website' },
               { property: 'og:url', content: 'https://hizbe.dev/about' },
