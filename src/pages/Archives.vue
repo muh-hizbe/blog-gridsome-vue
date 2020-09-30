@@ -57,11 +57,11 @@ export default {
           meta: [
               { name: 'author', content: 'Muhammad Hizbullah' },
               { name: 'description', content: 'All archieve post saved here.' },
-              { property: 'og:title', content: 'Hizbe Blog' },
+              { property: 'og:title', content: 'Archives' },
               { property: 'og:description', content: 'All archieve post saved here.' },
               { property: 'og:type', content: 'website' },
               { property: 'og:url', conten: 'https://hizbe.dev/archives' },
-              { name: 'twitter:title', content: 'Hizbe Blog' },
+              { name: 'twitter:title', content: 'Archives' },
               { name: 'twitter:description', content: 'All archieve post saved here.' },
               { name: 'twitter:card', content: 'summary_large_image' },
               { name: 'twitter:url', conten: 'https://hizbe.dev/archives' }
