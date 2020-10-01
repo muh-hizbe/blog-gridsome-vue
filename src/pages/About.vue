@@ -4,7 +4,7 @@
             <h1 class="m-center text-center">About</h1>
         </div>
         <div class="grid-container text-center">
-            <g-image alt="Author image" class="m-center" src="~/assets/images/home.jpg" width="180" height="180" blur="5" />
+            <g-image alt="Author image" class="author__image m-center" src="~/assets/images/home.jpg" width="180" height="180" blur="5" />
             <h3 class="m-center text-center">Muhammad Hizbullah</h3>
         </div>
         <div class="grid-container">
