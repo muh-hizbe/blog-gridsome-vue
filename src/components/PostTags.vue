@@ -24,8 +24,8 @@ export default {
   	text-decoration: none;
   	background-color: var(--bg-color-tags);
   	color: currentColor!important; //Todo: remove important;
-  	padding: .5em;
-  	border-radius: var(--radius);
+  	padding: .2em .3em;
+  	border-radius: calc(var(--radius)/2);
   }
 }
 </style>
