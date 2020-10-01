@@ -3,9 +3,9 @@
         <div class="grid-container text-center">
             <h1 class="m-center text-center">About</h1>
         </div>
-
-        <g-image alt="Author image" class="author__image" src="~/assets/images/home.jpg" width="180" height="180" blur="5" />
-        
+        <div class="grid-container">
+            <g-image alt="Author image" class="author__image" src="~/assets/images/home.jpg" width="180" height="180" blur="5" />
+        </div>
         <div class="grid-container">
             <pre class="about" wrap>
     Hai, aku Muhammad Hizbullah.
