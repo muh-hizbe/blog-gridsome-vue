@@ -4,6 +4,7 @@
             <h1 class="m-center text-center">About</h1>
         </div>
         <div class="grid-container">
+            <g-image alt="Author image" class="author__image" src="~/assets/images/home.jpg" width="180" height="180" blur="5" />
             <pre class="about" wrap>
     Hai, aku Muhammad Hizbullah.
 
@@ -53,5 +54,29 @@ export default {
 <style lang="scss">
 .about{
     background-color: var(--bg-color)
+}
+.author {
+	margin: 0 auto;
+	max-width: 500px;
+	text-align: center;
+	padding: calc(var(--space) / 2) 0;
+	&__image {
+		border-radius: 100%;
+		width: 90px;
+		height: 90px;
+		margin-bottom: 1em;
+	}
+	&__intro {
+		opacity: .8;
+	}
+	&__site-title {
+		font-size: 1.5em;
+	}
+	&__links {
+		margin-top: -.5em;
+		a {
+			margin: 0 .5em;
+		}
+	}
 }
 </style>
