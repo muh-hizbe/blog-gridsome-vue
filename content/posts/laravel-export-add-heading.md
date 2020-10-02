@@ -3,7 +3,7 @@ title: Export file Excel di Laravel - Add Heading
 date: 2020-10-02
 published: true
 tags: ['Laravel', 'Laravel7', 'Coding']
-cover_image: ./images/Larexcel-2.png
+cover_image: ./images/Larexcel-3.png
 canonical_url: https://hizbe.dev
 description: "Kita akan bahas ekspor ke Excel dengan menambahkan heading supaya cantik dan mudah dipahami kolom ini tuh data apa. Yuk Lets do it!"
 
