@@ -1,0 +1,157 @@
+---
+title: Export file Excel di Laravel - Add Heading
+date: 2020-10-02
+published: true
+tags: ['Laravel', 'Laravel7', 'Coding']
+cover_image: ./images/Larexcel-2.png
+canonical_url: https://hizbe.dev
+description: "Kita akan bahas ekspor ke Excel dengan menambahkan heading supaya cantik dan mudah dipahami kolom ini tuh data apa. Yuk Lets do it!"
+
+---
+
+<i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
+<h2>Mari Ekspor excel dengan menambahkan heading pada kolom 🧱 - Part #3</h2>
+
+Pada artikel seri sebelum ini kita sudah membahas bagaimana caranya mapping data dengan data pada kolom mana saja yang akan kita ambil. Tentu kita berhasil mendapatkannya, akan tetapi kita tidak tau itu data apa. Mari kita perjelas dengan memberi label berupa heading pada setiap kolomnya.
+
+## 1.  Daftarkan WithHeadings
+
+Untuk memberikan heading pada kolom yang akan kita berikan, tentunya kita harus menambahkan sebuah interface yaitu `WithHeadings` ke class File Export.
+
+Yang sebelumnya di file `UsersExport` seperti ini.
+```php
+    <?php
+
+    namespace App\Exports;
+
+    use App\User;
+    use Maatwebsite\Excel\Concerns\FromCollection;
+    use Maatwebsite\Excel\Concerns\WithMapping;
+
+    class UsersExport implements FromCollection, WithMapping
+    {
+        public function collection()
+        {
+            return User::all();
+        }
+    }
+```
+
+Maka kita tambahkan `WithHeadings`
+```php
+    use Maatwebsite\Excel\Concerns\WithHeadings;
+
+    class UsersExport implements FromCollection, WithHeadings
+```
+
+sehingga menjadi tampak seperti ini.
+```php
+    <?php
+
+    namespace App\Exports;
+
+    use App\User;
+    use Maatwebsite\Excel\Concerns\FromCollection;
+    use Maatwebsite\Excel\Concerns\WithMapping;
+    use Maatwebsite\Excel\Concerns\WithHeadings;
+
+    class UsersExport implements FromCollection, WithMapping, WithHeadings
+    {
+        public function collection()
+        {
+            return User::all();
+        }
+    }
+```
+
+## 2. Gunakan function headings():array
+
+Selanjutnya kita tambahkan `function headings` dengan tipe array ke dalam class `UserExport`.
+```php
+    public function heading():array
+    {
+        return [
+            //value dari heading yang akan kita berikan, usahakan sesuai dengan jumlah dan urutan pada mapping-data ya.
+        ];
+    }
+```
+
+Misal kita memiliki kolom `name | email | address | phone`, maka 4 field column itu akan kita beri heading yaitu `Nama | Email | Alamat | No.HP`, pastikan jumlahnya sama dengan kolom data yang kita ambil dan harus urut dengan column yang ada di table database, bila kita menggunakan  mapping-data, maka harus urut dengan urutan data yang kita mapping.
+
+Sehingga pada `function heading` akan tampak seperti ini.
+```php
+    public function headings():array
+    {
+        return [
+            //pastikan urut dan jumlahnya sesuai dengan yang ada di mapping-data atau table di database
+            'Nama',
+            'Email',
+            'Alamat',
+            'No.HP',
+        ];
+    }
+```
+
+Dan keseluruhan file `UsersExport` akan tampak seperti ini.
+```php
+    <?php
+
+    namespace App\Exports;
+
+    use App\User;
+    use Maatwebsite\Excel\Concerns\FromCollection;
+    use Maatwebsite\Excel\Concerns\WithMapping;
+    use Maatwebsite\Excel\Concerns\WithHeadings;
+
+    class UsersExport implements FromCollection, WithMapping, WithHeadings
+    {
+        public function collection()
+        {
+            return User::all();
+        }
+    }
+
+    public function map($user):array
+    {
+        return [
+            //data yang dari kolom tabel database yang akan diambil
+            $user->name,
+            $user->email,
+            $user->address,
+            $user->phone,
+        ];
+    }
+
+    public function headings():array
+    {
+        return [
+            //pastikan urut dan jumlahnya sesuai dengan yang ada di mapping-data atau table di database
+            'Nama',
+            'Email',
+            'Alamat',
+            'No.HP',
+        ];
+    }
+```
+
+## 3. Jangan lupa kita uji
+
+Selanjutnya yaitu kita uji. Akses route yang sudah didaftarkan, lihat hasil unduhan file excel nya, kemudian buka. Apakah berhasil? Jika Ya, berarti anda luarbiasa. Jika belum berhasil silahkan tanyakan via kolom komentar ya.
+
+Selesai!<br>
+Next kita akan buat lebar dari kolomnya sesuai dengan value paling panjang. Biar nggak repot dan susah dibaca.
+
+Playlist Laravel-Excel:
+
+1.  [Mari Ekspor file excel di Laravel 📁 - Part #1](https://hizbe.dev/export-file-excel-di-laravel/)
+2.  [Mari Ekspor excel dengan kolom tertentu (Mappind Data) 🏷️ - Part #2](https://hizbe.dev/export-file-excel-di-laravel-mapping-data/)
+3.  [Mari kita tambahkan headings di file Excelnya (Add Heading) 🧱 - Part #3](https://hizbe.dev/export-file-excel-di-laravel-add-heading/)
+
+
+Atau bisa simak dalam sebuah video, silahkan klik pada salah satu tautan dibawah yaa 👇
+
+Playlist Video Laravel-Excel:
+
+1.  [Laravel - #1 Export file (basic)](https://youtu.be/usVc9IgHpk4)
+
+See you on next article! 😇
