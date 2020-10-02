@@ -125,7 +125,8 @@ Dan keseluruhan file `UsersExport` akan tampak seperti ini.
 
 Selanjutnya yaitu kita uji. Akses route yang sudah didaftarkan, lihat hasil unduhan file excel nya, kemudian buka. Apakah berhasil? Jika Ya, berarti anda luarbiasa. Jika belum berhasil silahkan tanyakan via kolom komentar ya.
 
-
+Selesai!<br>
+Next kita akan tambahkan header atau heading. Apalah namanya gak penting.
 
 Playlist Laravel-Excel:
 
