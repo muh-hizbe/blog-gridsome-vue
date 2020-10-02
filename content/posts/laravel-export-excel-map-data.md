@@ -132,6 +132,7 @@ Playlist Laravel-Excel:
 
 1.  [Mari Ekspor file excel di Laravel 📁 - Part #1](https://hizbe.dev/export-file-excel-di-laravel/)
 2.  [Mari Ekspor excel dengan kolom tertentu (Mappind Data) 🏷️ - Part #2](https://hizbe.dev/export-file-excel-di-laravel-mapping-data/)
+3.  [Mari kita tambahkan headings di file Excelnya (Add Heading) 🧱 - Part #3](https://hizbe.dev/export-file-excel-di-laravel-add-heading/)
 
 
 Atau bisa simak dalam sebuah video, silahkan klik pada salah satu tautan dibawah yaa 👇
