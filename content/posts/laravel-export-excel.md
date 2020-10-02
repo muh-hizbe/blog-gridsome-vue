@@ -142,7 +142,8 @@ Jadi `'users/export/'` adalah alamat url yang akan kita akses nantinya untuk men
 
 Yeaayyy kita berhasil membuatnya, mari kita uji apakah berhasil? silahkan jalankan Laravel projek kawan-kawan dan tambahkan `/users/export` pada route link browser anda. Jika berhasil terdownload berarti anda sangat memahami artikel ini, namun bila anda belum paham silahkan tanyakan pada kolom komentar ya 😉.
 
-
+Selesai!<br>
+Next kita belajar mapping-data. Kita ambil data yang kita inginkan aja.
 
 Playlist Artikel Laravel-Excel:
 
