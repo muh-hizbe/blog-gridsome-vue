@@ -1,7 +1,7 @@
 <template>
     <Layout :show-logo="false">
         <div class="grid-container text-center">
-            <g-image alt="Author image" class="author__image m-center" src="~/assets/images/home.jpg" width="180" height="180" blur="5" />            
+            <g-image alt="Author image" class="author__image m-center" src="~/assets/images/me.jpg" width="200" height="200" blur="5" />            
         </div>
         <div class="grid-container text-center">
             <h3 class="m-center text-center">Muhammad Hizbullah</h3>
@@ -64,9 +64,9 @@ export default {
 	padding: calc(var(--space) / 2) 0;
 	&__image {
 		border-radius: 100%;
-		width: 90px;
-		height: 90px;
-		margin-bottom: 1em;
+		width: 130px;
+		height: 130px;
+		margin-bottom: 0;
 	}
 	&__intro {
 		opacity: .8;
