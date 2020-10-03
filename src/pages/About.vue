@@ -11,6 +11,8 @@
     Hai, aku Muhammad Hizbullah.
 
     Aku hanyalah manusia 🧑‍ yang ingin membuat sebuah karya yang keren dan menyenangkan hari serta hati ❤️ orang-orang, tapi aku juga butuh money 💸 untuk keberlangsungan hidup 🤑.
+    
+    Aku seorang Muslim, tak suka merokok. Hanya saja dunia tak kulupakan sebagai pijakan menuju alam yang abadi (Akherat). Karena Allah Maha Kuasa atas segala sesuatu.
 
     🔗 Kunjungi aku di dunia lain ya :
     1.  <g-link to="//linkedin.com/in/muhammad-hizbullah-736109168/">Linkedin</g-link>
