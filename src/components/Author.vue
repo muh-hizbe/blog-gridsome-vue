@@ -36,6 +36,7 @@ export default {
 
 <style lang="scss">
 .author {
+    font-family: 'Bebas Neue', cursive;
 	margin: 0 auto;
 	max-width: 500px;
 	text-align: center;
@@ -49,10 +50,11 @@ export default {
 	}
 
 	&__intro {
+        // font-family: 'Bebas Neue', cursive;
 		opacity: .8;
 	}
 
-	&__site-title {
+	&__site-title {        
 		font-size: 1.5em;
 	}
 
@@ -65,8 +67,10 @@ export default {
 }
 
 .author h1{
-    font-size: 50px;
-    font-family: 'Pacifico','Courier','Brush Script MT','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;
+    font-size: 100px;
+    // font-family: 'Cabin Sketch';
+    font-family: 'Bebas Neue', cursive;
+    // font-family: 'Pacifico','Courier','Brush Script MT','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
     a{
         text-decoration: none !important;
