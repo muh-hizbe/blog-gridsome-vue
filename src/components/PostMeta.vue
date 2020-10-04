@@ -1,9 +1,11 @@
 <template>
    <div class="post-meta">
-      📅 {{ post.date }} |
-      <template v-if="post.timeToRead">
-        <strong>{{ post.timeToRead }} min read.</strong>
-      </template>
+        <strong>
+            {{ post.date }} |
+            <template v-if="post.timeToRead">
+                {{ post.timeToRead }} min read.
+            </template>
+        </strong>
     </div>    
 </template>
 
@@ -16,6 +18,6 @@ export default {
 <style lang="scss">
 .post-meta {
   font-size: .8em;
-  opacity: .8;
+  opacity: 1;
 }
 </style>
