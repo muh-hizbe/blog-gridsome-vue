@@ -59,7 +59,7 @@ export default {
 	}
 
 	&__links {
-		margin-top: 1.0em;
+		margin-top: 1.0em !important;
 		a {
             font-size: 2em;
 			margin: 0 0.5em;
