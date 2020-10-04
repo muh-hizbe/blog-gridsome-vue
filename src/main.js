@@ -32,11 +32,6 @@ export default function (Vue, { router, head, isClient }) {
         crossorigin: 'anonymous'
     })
 
-    head.link.push({
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css?family=Gamja+Flower|Pacifico'
-    })    
-
     head.meta.push({
         name: 'keywords',
         content: 'Hizbe, Blog, Hizbullah, Hizbu, JavaScript'
