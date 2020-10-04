@@ -14,9 +14,9 @@ if (process.env.WEBPACK_STATS) {
 }
 
 module.exports = {
-  siteName: ' Hizbe\'s Blog ;',
+  siteName: ' hizbe\'s',
   siteUrl: 'https://hizbe.dev',
-  siteDescription: 'it\'s about my life | my personal blog ',
+  siteDescription: 'Mari belajar, mari berbagi, yuk jalan bersama!',
   titleTemplate: '%s | @hizbe',
   icon: 'src/favicon.png',
 
