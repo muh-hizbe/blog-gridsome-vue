@@ -92,36 +92,42 @@ export default {
 
 <style lang="scss">
 .post-title {
-  padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
-  text-align: center;
-  max-width: 860px;
-  margin: 0 auto;
+    padding: calc(var(--space) / 2) 0 calc(var(--space) / 2);
+    text-align: center;
+    max-width: 860px;
+    margin: 0 auto;
+    &__text {
+        font-family: 'Bebas Neue', cursive;
+    };
 }
 
 .post {
 
+    font-family: 'Montserrat', sans-serif;
   &__header {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-    margin-top: calc(var(--space) * -1);
-    margin-bottom: calc(var(--space) / 2);
-    overflow: hidden;
+        font-family: 'Bebas Neue', cursive;
+        width: calc(100% + var(--space) * 2);
+        margin-left: calc(var(--space) * -1);
+        margin-top: calc(var(--space) * -1);
+        margin-bottom: calc(var(--space) / 2);
+        overflow: hidden;
 
-    img {
-      width: 100%;
-      border-radius: var(--radius);
-    }
+        img {
+            width: 100%;
+            border-radius: var(--radius);
+        }
 
-    &:empty {
-      display: none;
-    }
+        &:empty {
+            display: none;
+        }
   }
 
   &__content {
     width: calc(100% + var(--space) * 2);
     margin-left: calc(var(--space) * -1);
     h2:first-child {
-      margin-top: 0;
+        font-family: 'Bebas Neue', cursive;
+        margin-top: 0;
     }
 
     p:first-of-type {
