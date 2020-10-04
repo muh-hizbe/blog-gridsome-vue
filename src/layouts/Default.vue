@@ -112,6 +112,7 @@ export default {
 
   > span {
     margin: 0 .35em;
+    font-family: 'Quattrocento Sans',sans-serif;
   }
 
   a {
