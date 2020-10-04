@@ -57,7 +57,7 @@ export default {
 
   &__title {
     margin-top: 0;
-    font-family: 'Kanit', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-size: 1.5em;
   }
 
