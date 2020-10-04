@@ -54,15 +54,13 @@ export default {
 
 <style lang="scss">
 .navbar{    
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
     background-color: var(--bg-color);
     color: var(--title-color);
-    // box-shadow: var(--box-shadow);
     a {
       color: var(--title-color);  
       text-decoration: none;
-    }
-    .nav-right a{
-        font-size: 15px!important;
     }
 }
 
