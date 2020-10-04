@@ -6,12 +6,12 @@ html {
 // Light default theme
 body {
     --bg-main: #213f9a;
-	--bg-color: #F3F7F9;
+	--bg-color: #ffffff;
 	--bg-color-tags: #cacdcf;
 	--bg-content-color: #fff;
 	--bg-code: rgb(37, 10, 53);
-	--body-color: #444;
-	--title-color: #111;
+	--body-color: rgb(0, 0, 0);
+	--title-color: rgb(0, 0, 0);
 	--text-code-color: #f8f6f6;
 	--text-blockquote-color: #413e3e;
 	--link-color: #6b17e6;
@@ -22,7 +22,7 @@ body {
 	--space: 2.5rem;
 	--content-width: 860px;
 	--header-height: 80px;
-    --radius: 20px;
+    --radius: 10px;
     --box-shadow: 0px 2px 5px 0px rgba(0, 52, 102, 0.11)!important;
 }
 
@@ -43,7 +43,7 @@ body[data-theme="dark"] {
     --box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.281)!important;
     --text-code-color: #dfe23f;
     --text-blockquote-color: #e4e2e2;
-	--hover-card-body: #0D2538;
+	--hover-card-body: #122e44;
     --bg-color: #0D2538;
     --bg-color-tags: #091925;
  	--bg-content-color: #0f2d44;
