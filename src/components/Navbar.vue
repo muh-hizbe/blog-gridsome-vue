@@ -56,7 +56,7 @@ export default {
 .navbar{    
     background-color: var(--bg-color);
     color: var(--title-color);
-    box-shadow: var(--box-shadow);
+    // box-shadow: var(--box-shadow);
     a {
       color: var(--title-color);  
       text-decoration: none;
