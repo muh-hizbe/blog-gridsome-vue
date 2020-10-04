@@ -3,8 +3,9 @@
 
 // Changes here requires a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
+const tailwindcss = require("tailwindcss")
+const plugins = [tailwindcss]
 
-const plugins = []
 if (process.env.WEBPACK_STATS) {
   const { StatsWriterPlugin } = require('webpack-stats-plugin')
   plugins.push(new StatsWriterPlugin({
@@ -23,6 +24,14 @@ module.exports = {
   templates: {
     Post: '/:title',
     Tag: '/tag/:id'
+  },
+
+  css: {
+    loaderOptions: {
+        postcss: {
+            plugins
+        },
+    },
   },
 
   plugins: [
