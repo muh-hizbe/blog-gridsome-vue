@@ -1,8 +1,8 @@
 <template>
   <div class="post-card content-box" :class="{'post-card--has-poster' : post.poster}">
-    <div class="post-card__header">
+    <!-- <div class="post-card__header">
       <g-image alt="Cover image" v-if="post.cover_image" class="post-card__image" :src="post.cover_image" />
-    </div>
+    </div> -->
     <div class="post-card__content">
       <h2 class="post-card__title" v-html="post.title" />
       <p class="post-card__description" v-html="post.description" />
@@ -30,10 +30,11 @@ export default {
 
 <style lang="scss">
 .post-card {
-  margin-bottom: var(--space);
-  position: relative;
-//   box-shadow: 0px 2px 5px 0px rgba(0, 52, 102, 0.11)!important;
-    box-shadow: var(--box-shadow);
+    margin-bottom: calc(var(--space) * 1);
+    position: relative;
+    border-bottom: 3px solid var(--body-color);
+    //   box-shadow: 0px 2px 5px 0px rgba(0, 52, 102, 0.11)!important;
+    // box-shadow: var(--box-shadow);
 
   &__header {
     margin-left: calc(var(--space) * -1);
@@ -56,6 +57,8 @@ export default {
 
   &__title {
     margin-top: 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1.5em;
   }
 
   &:hover {
@@ -80,6 +83,14 @@ export default {
     overflow: hidden;
     text-indent: -9999px;
     z-index: 0;
+  }
+
+  &__content {
+      font-family: 'Quattrocento Sans',sans-serif;
+  }
+
+  &__description {
+      font-weight: 600;
   }
 }
 </style>
