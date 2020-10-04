@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:400, 600');
+// @import url('https://fonts.googleapis.com/css?family=Poppins:400, 600');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Exo:wght@600&family=Lilita+One&family=Montserrat:wght@500&family=Oswald:wght@500&family=Pacifico&display=swap');
 
 html {
   font-size: var(--base-font-size);
 }
 
 body {
-  font-family: 'Gamja Flower',sans-serif,Menlo,Monaco,Consolas,Liberation Mono;
-  font-weight: 400;
-  line-height: 1.45;
+//   font-family: 'Gamja Flower', 'Quattrocento Sans', sans-serif, Menlo,Monaco, Consolas, Liberation Mono;
+    // font-family: 'Quattrocento Sans',sans-serif;
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    line-height: 1.45;
 }
 
 p {
