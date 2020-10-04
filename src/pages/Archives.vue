@@ -1,11 +1,12 @@
 <template>
     <Layout :show-logo="false">
-        <div class="grid-container text-center">
-            <h1 class="m-center text-center">Archives</h1>
-        </div>
-
         <div class="grid-container">
             <table class="m-center" style="overflow: scroll">
+                <tr class="archieves-row heading-table">
+                    <td class="col-date">Date</td>
+                    <td class="col-title">Title</td>
+                    <td class="col-title">Tags</td>
+                </tr>
                 <ArchieveCard v-for="edge in $page.posts.edges" :key="edge.node.id" :post="edge.node"/>
             </table>
         </div>
@@ -70,3 +71,10 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+    .heading-table {
+        font-family: 'Lilita One', cursive;
+        border-bottom: 2px solid var(--body-color);
+    }
+</style>
