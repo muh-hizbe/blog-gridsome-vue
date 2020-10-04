@@ -90,6 +90,7 @@ export default {
   }
 
   &__description {
+      margin: 20px auto;
       font-weight: 600;
   }
 }
