@@ -1,26 +1,29 @@
 <template>
-    <Layout :show-logo="false">
-        <div class="grid-container text-center">
-            <g-image alt="Author image" class="author__image m-center" src="~/assets/images/me.jpg" width="200" height="200" blur="5" />            
-        </div>
-        <div class="grid-container text-center">
-            <h3 class="m-center text-center">Muhammad Hizbullah</h3>
-        </div>
-        <div class="grid-container">
-            <pre class="about" wrap>
+    <Layout :show-logo="false">        
+        <div class="flex container md:flex-row-reverse flex-wrap mx-auto sm:px-5 lg:px-32">
+
+            <div class="sm:w-full lg:w-1/3">
+                <pre class="bg-transparent text-2xl" wrap>
+    <g-image alt="Author image" class="rounded-full w-full sm:mx-auto lg:mx-0" src="~/assets/images/me.jpg" width="200" height="200" blur="5" />
+    🔗 Connect with me :    
+    1.  <g-link to="//linkedin.com/in/muhammad-hizbullah-736109168/">LinkedIn</g-link>
+    2.  <g-link to="//github.com/muh-hizbe">Github</g-link>
+    3.  <g-link to="//twitter.com/muh__hizbullah">Twitter</g-link>
+    4.  <g-link to="//instagram.com/muh__hizbullah">Instagram</g-link>
+    5.  <g-link to="mailto:muh.saferagic@gmail.com">Email</g-link>
+                </pre>
+            </div>
+
+            <div class="sm:w-full lg:w-2/3">            
+                <pre class="bg-transparent text-2xl" wrap>
     Hai, aku Muhammad Hizbullah.
 
     Aku hanyalah manusia 🧑‍ yang ingin membuat sebuah karya yang keren dan menyenangkan hari serta hati ❤️ orang-orang, tapi aku juga butuh money 💸 untuk keberlangsungan hidup 🤑.
     
     Aku seorang Muslim, tak suka merokok. Hanya saja dunia tak kulupakan sebagai pijakan menuju alam yang abadi (Akherat). Karena Allah Maha Kuasa atas segala sesuatu.
+                </pre>     
+            </div>                
 
-    🔗 Kunjungi aku di dunia lain ya :
-    1.  <g-link to="//linkedin.com/in/muhammad-hizbullah-736109168/">Linkedin</g-link>
-    2.  <g-link to="//github.com/muh-hizbe">Github</g-link>
-    3.  <g-link to="//twitter.com/muh__hizbullah">Twitter</g-link>
-    4.  <g-link to="//instagram.com/muh__hizbullah">Instagram</g-link>
-    5.  <g-link to="mailto:muh.saferagic@gmail.com">Email</g-link>
-            </pre>
         </div>
     </Layout>
 </template>
@@ -56,20 +59,27 @@ export default {
 
 <style lang="scss">
 .about{
-    background-color: var(--bg-color);
-    padding: 0;
+    display: grid;
+    &__left {
+        background-color: var(--bg-color);
+        padding: 0;
+        font-family: 'Quattrocento Sans',sans-serif;
+        font-size: 1.15em;
+        padding: 5px 20px;
+    }
+    &__right {
+        background-color: var(--bg-color);
+        padding: 0;
+        font-family: 'Quattrocento Sans',sans-serif;
+        font-size: 1.15em;
+        padding: 5px 20px;
+    }
 }
 .author {
 	margin: 0 auto;
 	max-width: 500px;
 	text-align: center;
 	padding: calc(var(--space) / 2) 0;
-	&__image {
-		border-radius: 100%;
-		width: 130px;
-		height: 130px;
-		margin-bottom: 0;
-	}
 	&__intro {
 		opacity: .8;
 	}
