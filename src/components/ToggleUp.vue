@@ -50,8 +50,8 @@ export default {
     background-color: transparent;
     border: 0;
     border-radius: 0.5rem;
-    color: var(--body-color);
-    background-color: var(--bg-color);
+    color: var(--text-toggle);
+    background-color: var(--bg-toggle);
     box-shadow: var(--box-shadow);
     cursor: pointer;
 
