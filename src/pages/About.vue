@@ -2,25 +2,25 @@
     <Layout :show-logo="false">        
         <div class="flex container md:flex-row-reverse flex-wrap mx-auto sm:px-5 lg:px-32">
 
-            <div class="sm:w-full lg:w-1/3">
-                <pre class="bg-transparent text-2xl" wrap>
-    <g-image alt="Author image" class="rounded-full w-full sm:mx-auto lg:mx-0" src="~/assets/images/me.jpg" width="200" height="200" blur="5" />
-    🔗 Connect with me :    
-    1.  <g-link to="//linkedin.com/in/muhammad-hizbullah-736109168/">LinkedIn</g-link>
-    2.  <g-link to="//github.com/muh-hizbe">Github</g-link>
-    3.  <g-link to="//twitter.com/muh__hizbullah">Twitter</g-link>
-    4.  <g-link to="//instagram.com/muh__hizbullah">Instagram</g-link>
-    5.  <g-link to="mailto:muh.saferagic@gmail.com">Email</g-link>
+            <div class="sm:w-full lg:w-1/3 mx-auto lg:mx-0 mv-0">
+                <pre class="bg-transparent rounded-none text-2xl mb-0 px-0 lg:pl-5 lg:border-l-4" wrap>
+    <g-image alt="Author image" class="rounded-full w-30 h-30 mx-auto" src="~/assets/images/me.jpg" width="200" height="200" blur="5" />
+    Connect with me :    
+    1.  <g-link class="font-bold" to="//linkedin.com/in/muhammad-hizbullah-736109168/">LinkedIn</g-link>
+    2.  <g-link class="font-bold" to="//github.com/muh-hizbe">Github</g-link>
+    3.  <g-link class="font-bold" to="//twitter.com/muh__hizbullah">Twitter</g-link>
+    4.  <g-link class="font-bold" to="//instagram.com/muh__hizbullah">Instagram</g-link>
+    5.  <g-link class="font-bold" to="mailto:muh.saferagic@gmail.com">Email</g-link>
                 </pre>
             </div>
 
             <div class="sm:w-full lg:w-2/3">            
-                <pre class="bg-transparent text-2xl" wrap>
-    Hai, aku Muhammad Hizbullah.
+                <pre class="bg-transparent text-2xl px-0 lg:pr-5" wrap>
+    Hai, aku <strong class="font-bold">Muhammad Hizbullah</strong>.
 
     Aku hanyalah manusia 🧑‍ yang ingin membuat sebuah karya yang keren dan menyenangkan hari serta hati ❤️ orang-orang, tapi aku juga butuh money 💸 untuk keberlangsungan hidup 🤑.
     
-    Aku seorang Muslim, tak suka merokok. Hanya saja dunia tak kulupakan sebagai pijakan menuju alam yang abadi (Akherat). Karena Allah Maha Kuasa atas segala sesuatu.
+    Aku seorang <i class="italic">Muslim</i>, tak suka merokok. Dunia pun tak kulupakan sebagai pijakan menuju alam yang abadi (Akherat), urusan Akherat itu harus. Karena Allah Maha Kuasa atas segala sesuatu.
                 </pre>     
             </div>                
 
