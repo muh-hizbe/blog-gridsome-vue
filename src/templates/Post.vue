@@ -1,13 +1,13 @@
 <template>
   <Layout>
     <div class="post-title">
-      <h1 class="post-title__text">
+      <h1 class="post-title__text text-4xl">
         {{ $page.post.title }}
       </h1>
 
       <PostMeta :post="$page.post" />
 
-      <hr>
+      <hr class="my-3">
 
     </div>
 
@@ -104,7 +104,7 @@ export default {
 .post {
 
     font-family: 'Montserrat', sans-serif;
-  &__header {
+    &__header {
         font-family: 'Bebas Neue', cursive;
         width: calc(100% + var(--space) * 2);
         margin-left: calc(var(--space) * -1);
@@ -120,27 +120,28 @@ export default {
         &:empty {
             display: none;
         }
-  }
-
-  &__content {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-    h2:first-child {
-        font-family: 'Bebas Neue', cursive;
-        margin-top: 0;
     }
 
-    p:first-of-type {
-      font-size: 1.2em;
-      color: var(--title-color);
+    &__content {    
+        font-family: 'Segoe UI', cursive;
+        width: calc(100% + var(--space) * 2);
+        margin-left: calc(var(--space) * -1);
+
+        h2:first-child {
+            // font-family: 'Bebas Neue', cursive;
+            margin-top: 0;
+        }
+
+        p:first-of-type {
+            font-size: 1.2em;
+            color: var(--title-color);
+        }
     }
-  }
 
-  &__footer {
-    width: calc(100% + var(--space) * 2);
-    margin-left: calc(var(--space) * -1);
-  }
-
+    &__footer {
+        width: calc(100% + var(--space) * 2);
+        margin-left: calc(var(--space) * -1);
+    }
 }
 
 .post-comments {
