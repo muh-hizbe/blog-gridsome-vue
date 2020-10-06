@@ -19,7 +19,7 @@ code {
   background-color: var(--bg-code);
   color: var(--text-code-color);
   border: 0px solid var(--border-color);
-  font-size: .85em;
+  font-size: 1em;
   padding: .2em .5em;
 }
 
@@ -29,7 +29,8 @@ code .operator, code .entity {
 
 code[class*="language-"],
 pre[class*="language-"] {
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    // font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-family: 'Fira Code', monospace;
 	text-align: left;
 	white-space: pre;
 	word-spacing: normal;
