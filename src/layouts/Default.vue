@@ -20,11 +20,11 @@
         <span class="footer__links">Built with 💜 and 🎨</span>
         </footer>
 
-        <div class="toggle__left">
+        <div class="toggle__center w-full text-center">
             <ToggleUp />
         </div>
 
-        <div class="toggle__right">        
+        <div class="toggle__right w-10 h-10">        
             <ToggleTheme />
         </div>
 
@@ -92,8 +92,14 @@ export default {
 
 .toggle__right {
     position: fixed;
-    bottom: 10px;
+    bottom: 15px;
     right: 15px;
+    z-index: 102;
+}
+
+.toggle__center {
+    position: fixed;
+    bottom: 15px;
     z-index: 101;
 }
 
