@@ -132,6 +132,10 @@ export default {
             margin-top: 0;
         }
 
+        p {
+            font-family: 'Segoe UI';
+        }
+
         p:first-of-type {
             font-size: 1.2em;
             color: var(--title-color);
