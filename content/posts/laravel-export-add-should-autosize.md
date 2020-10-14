@@ -1,9 +1,9 @@
 ---
 title: Export file Excel di Laravel - Column Auto Size
-date: 2020-10-03
-published: false
+date: 2020-10-15
+published: true
 tags: ['Laravel', 'Laravel7', 'Coding']
-cover_image: ./images/Larexcel-3.png
+cover_image: ./images/Larexcel-4.png
 canonical_url: https://hizbe.dev
 description: "Kita akan belajar cara membuat lebar kolomnya menyesuaikan value yang paling panjang, biar kelihatan semua valuenya. Kan capek kalo harus geser-geser buat ngelebarin manual, apalagi kolomnya lebih dari 20."
 
