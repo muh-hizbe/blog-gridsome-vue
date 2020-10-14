@@ -5,7 +5,7 @@ published: true
 tags: ['Laravel', 'Laravel7', 'Coding']
 cover_image: ./images/Larexcel-2.png
 canonical_url: https://hizbe.dev
-description: "Kita akan bahas ekspor ke Excel dengan kolom tertentu saja, tidak semua kolom ter exsport. Yuk Lets do it!"
+description: "Kita akan bahas ekspor ke Excel dengan kolom tertentu saja, tidak semua kolom ter export. Let's do it!"
 
 ---
 

@@ -5,7 +5,7 @@ published: true
 tags: ['Laravel', 'Laravel7', 'Coding']
 cover_image: ./images/Larexcel-3.png
 canonical_url: https://hizbe.dev
-description: "Kita akan bahas ekspor ke Excel dengan menambahkan heading supaya cantik dan mudah dipahami kolom ini tuh data apa. Yuk Lets do it!"
+description: "Kita akan bahas ekspor ke Excel dengan menambahkan heading supaya cantik dan mudah dipahami kolom ini tuh data apa. Let's do it!"
 
 ---
 
