@@ -141,11 +141,12 @@ Selanjutnya yaitu kita uji. Akses route yang sudah didaftarkan, lihat hasil undu
 Selesai!<br>
 Next kita akan buat lebar dari kolomnya sesuai dengan value paling panjang. Biar nggak repot dan susah dibaca.
 
-Playlist Laravel-Excel:
+Playlist Artikel Laravel-Excel:
 
 1.  [Mari Ekspor file excel di Laravel 📁 - Part #1](https://hizbe.dev/export-file-excel-di-laravel/)
 2.  [Mari Ekspor excel dengan kolom tertentu (Mappind Data) 🏷️ - Part #2](https://hizbe.dev/export-file-excel-di-laravel-mapping-data/)
 3.  [Mari kita tambahkan headings di file Excelnya (Add Heading) 🧱 - Part #3](https://hizbe.dev/export-file-excel-di-laravel-add-heading/)
+4.  [Mari tambahkan Auto Size pada kolom (ShouldAutoSize) ⬅️➡️ - Part #4](https://hizbe.dev/export-file-excel-di-laravel-column-auto-size/)
 
 
 Atau bisa simak dalam sebuah video, silahkan klik pada salah satu tautan dibawah yaa 👇

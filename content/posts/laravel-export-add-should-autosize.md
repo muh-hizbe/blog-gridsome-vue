@@ -116,7 +116,7 @@ Selanjutnya yaitu kita uji. Akses route yang sudah didaftarkan, lihat hasil undu
 Selesai!<br>
 Next kita akan buat tulisan pada headingnya menjadi **Bold**. Biar lebih nampak tulisan di headingnya.
 
-Playlist Laravel-Excel:
+Playlist Artikel Laravel-Excel:
 
 1.  [Mari Ekspor file excel di Laravel 📁 - Part #1](https://hizbe.dev/export-file-excel-di-laravel/)
 2.  [Mari Ekspor excel dengan kolom tertentu (Mappind Data) 🏷️ - Part #2](https://hizbe.dev/export-file-excel-di-laravel-mapping-data/)
