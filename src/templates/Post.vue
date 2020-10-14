@@ -11,7 +11,7 @@
 
     </div>
 
-    <div class="post content-box">
+    <div class="post content-box mb-0">
       <div class="post__header">
         <g-image  alt="Cover image" v-if="$page.post.cover_image" :src="$page.post.cover_image" />
       </div>
@@ -21,6 +21,18 @@
       <div class="post__footer">
         <PostTags :post="$page.post" />
       </div>
+    </div>
+
+    <div class="w-full lg:w-2/3 lg:p-10 mx-auto items-center justify-center">
+        <hr class="py-3">
+        <div class="p-3">Support saya melalui:</div>
+        <ol class="p-3">
+            <li><a href="https://paypal.me/muhhizbe" target="_blank" rel="noopener noreferrer">PayPal</a></li>
+            <li><a href="https://saweria.co/hizbe" target="_blank" rel="noopener noreferrer">Saweria</a></li>
+            <li><a href="https://trakteer.id/hizbe" target="_blank" rel="noopener noreferrer">Trakteer</a></li>
+            <li><a href="https://ko-fi.com/hizbe" target="_blank" rel="noopener noreferrer">Ko-fi</a></li>
+            <li><a href="https://www.buymeacoffee.com/hizbe" target="_blank" rel="noopener noreferrer">BuyMeACoffee</a></li>
+        </ol>
     </div>
 
     <div class="post-comments">
@@ -73,6 +85,7 @@ export default {
         return {
             title: this.$page.post.title,
             meta: [
+                { name: 'author', content: 'Muhammad Hizbullah' },
                 { name: 'description', content: this.$page.post.description },
                 { property: 'og:type', content: 'website' },
                 { property: 'og:url', content: `https://hizbe.dev${this.$page.post.path}` },
