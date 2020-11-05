@@ -15,7 +15,7 @@
             </main>
         </transition>    
 
-        <footer class="footer">
+        <footer class="footer mt-8">
         <span class="footer__copyright">&copy; {{ new Date().getFullYear() }} </span>
         <span class="footer__links">Built with 💜 and 🎨</span>
         </footer>
