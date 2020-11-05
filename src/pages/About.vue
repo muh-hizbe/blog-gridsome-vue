@@ -4,7 +4,7 @@
 
             <div class="sm:w-full lg:w-1/3 mx-auto lg:mx-0 mv-0">
                 <pre class="bg-transparent rounded-none text-2xl mb-0 px-0 lg:pl-5 lg:border-l-4" wrap>
-    <g-image alt="Author image" class="rounded-full w-30 h-30 mx-auto" src="~/assets/images/me.jpg" width="200" height="200" blur="5" />
+    <g-image alt="Author image" class="rounded-full w-30 h-30 mx-auto border-8 border-gray-600 shadow-lg" src="~/assets/images/saya.jpg" width="200" height="200" blur="5" />
     Connect with me :    
     1.  <g-link class="font-bold" to="//linkedin.com/in/muhammad-hizbullah-736109168/">LinkedIn</g-link>
     2.  <g-link class="font-bold" to="//github.com/muh-hizbe">Github</g-link>
