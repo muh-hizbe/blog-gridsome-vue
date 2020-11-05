@@ -17,6 +17,7 @@ body {
 	--link-color: #6b17e6;
 	--border-color:  rgb(63, 17, 90);;
     --hover-card-body: #F3F7F9;
+    --bg-card-body: #f3f7f991;
     --bg-toggle: #0D2538;
     --bg-toggle-reverse: rgb(255, 255, 255);
     --text-toggle: #ffffff;
@@ -46,6 +47,7 @@ body[data-theme="dark"] {
     --text-code-color: #dfe23f;
     --text-blockquote-color: #e4e2e2;
 	--hover-card-body: #122e44;
+	--bg-card-body: #122e448f;
     --bg-color: #0D2538;
     --bg-color-tags: #091925;
  	--bg-content-color: #0f2d44;
