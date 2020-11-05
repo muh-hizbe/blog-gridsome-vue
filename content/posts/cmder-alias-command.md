@@ -12,7 +12,7 @@ description: "Saya akan membagikan apa yang saya ketahui tentang membuat alias c
 <i class="fa fa-quote-left fa-3x fa-pull-left" aria-hidden="true"></i>
 <h2>Command alias - cmder Windows</h2>
 
-Pada artikel seri ini saya akan menyampaikan bagaimana caranya membuat sebuah alias command untuk cmder di Windows. 
+Pada artikel seri ini saya akan menyampaikan bagaimana caranya membuat sebuah alias command untuk cmder di Windows. Saya asumsikan anda sudah menggunakan cmder sebagai terminal di windows anda.
 
 Anda Laravel developer? Jika iya, pasti tau caranya membuat new project menggunakan *composer*. Bagaimana perintahnya? Benar berikut perintah yang biasa digunakan.
 ```bash
@@ -24,11 +24,15 @@ Hal tersebut bisa dipersingkat, dan saya contohkan menjadi
 laravel_new nama-project
 ```
 
-Sungguh amazing bukan? mari ikuti langkah berikut!
+Sungguh amazing bukan? Tak perlu panjang-panjang mengetikkan command, mari ikuti langkah berikut!
 
 ## 1.  Buka lokasi program cmder
 
-Pada kasus yang saya miliki cmder milik saya, saya install di directory `C:\Users\username\Desktop\Development\cmder` jadi cari letak cmder anda, kemudian buka directory cmder tersebut.
+Pada kasus yang saya miliki cmder milik saya, saya install di directory
+```
+C:\Users\username\Desktop\Development\cmder
+```
+jadi cari letak cmder anda, kemudian buka directory cmder tersebut.
 
 ## 2. Edit config *user_aliases.cmd*
 
