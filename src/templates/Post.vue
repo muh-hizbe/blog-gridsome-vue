@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <PostLayout>
     <div class="post-title">
       <h1 class="post-title__text text-4xl">
         {{ $page.post.title }}
@@ -39,7 +39,7 @@
         <Gitalk :config={id:$page.post.id} />
     </div>
     
-  </Layout>
+  </PostLayout>
 </template>
 
 <page-query>
