@@ -2,9 +2,10 @@
 	<div class="grid-container navbar" :class="{ 'navbar--hidden' : !showHeader }">
         <div class="justify-between">
             <div class="nav-left">
-                <a @click="$router.go(-1)" class="cursor-pointer">Back</a>
+                <a @click="$router.go(-1)" class="cursor-pointer">&#8617;</a>
             </div>
             <div class="nav-right">
+                <g-link to="/">Home</g-link> |
                 <g-link to="/about">About</g-link> |
                 <g-link to="/archives">Archives</g-link>
                 <!-- <g-link to="/my-works">My works</g-link> -->
