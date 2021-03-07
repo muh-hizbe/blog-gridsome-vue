@@ -19,8 +19,6 @@
     Hai, aku <strong class="font-bold">Muhammad Hizbullah</strong>.
 
     Aku hanyalah manusia 🧑‍ yang ingin membuat sebuah karya yang keren dan menyenangkan hari serta hati ❤️ orang-orang, tapi aku juga butuh money 💸 untuk keberlangsungan hidup 🤑.
-    
-    Aku seorang <i class="italic">Muslim</i>, tak suka merokok. Dunia pun tak kulupakan sebagai pijakan menuju alam yang abadi (Akherat), urusan Akherat itu harus. Karena Allah Maha Kuasa atas segala sesuatu.
                 </pre>     
             </div>                
 
