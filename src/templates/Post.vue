@@ -23,7 +23,7 @@
       </div>
     </div>
 
-    <div class="w-full lg:w-2/3 lg:p-10 mx-auto items-center justify-center">
+    <div class="w-full md:w-3/4 lg:p-10 mx-auto items-center justify-center">
         <hr class="py-3">
         <div class="p-3">Support saya melalui:</div>
         <ol class="p-3">
@@ -152,6 +152,10 @@ export default {
         p:first-of-type {
             font-size: 1.2em;
             color: var(--title-color);
+        }
+
+        a {
+            font-family: 'Segoe UI';
         }
     }
 
