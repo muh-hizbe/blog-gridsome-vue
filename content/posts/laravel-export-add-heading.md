@@ -109,29 +109,30 @@ Dan keseluruhan file `UsersExport` akan tampak seperti ini.
         {
             return User::all();
         }
+        
+        public function map($user):array
+        {
+            return [
+                //data yang dari kolom tabel database yang akan diambil
+                $user->name,
+                $user->email,
+                $user->address,
+                $user->phone,
+            ];
+        }
+
+        public function headings():array
+        {
+            return [
+                //pastikan urut dan jumlahnya sesuai dengan yang ada di mapping-data atau table di database
+                'Nama',
+                'Email',
+                'Alamat',
+                'No.HP',
+            ];
+        }
     }
 
-    public function map($user):array
-    {
-        return [
-            //data yang dari kolom tabel database yang akan diambil
-            $user->name,
-            $user->email,
-            $user->address,
-            $user->phone,
-        ];
-    }
-
-    public function headings():array
-    {
-        return [
-            //pastikan urut dan jumlahnya sesuai dengan yang ada di mapping-data atau table di database
-            'Nama',
-            'Email',
-            'Alamat',
-            'No.HP',
-        ];
-    }
 ```
 
 ## 3. Jangan lupa kita uji
